@@ -222,7 +222,18 @@ export default function LessonPage() {
                   <AudioButton text={text.chinese} label="TTS" title="Đọc đoạn bằng TTS tiếng Trung" />
                 </div>
               )}
-              {showVietnamese && text.vietnamese && <div className="sentence-vi">{text.vietnamese}</div>}
+              {showPinyin && (text as any).pinyin && (
+                <div className="sentence-pinyin v2-long-pinyin">{(text as any).pinyin}</div>
+              )}
+              {showVietnamese && text.vietnamese && (
+                <div className="sentence-vi v2-long-vi">{text.vietnamese}</div>
+              )}
+              {(((text as any).pinyinStatus === 'generated_icu_han_latin') || text.vietnameseStatus === 'assistant_translation') && (
+                <div className="generated-content-note">
+                  {(text as any).pinyinStatus === 'generated_icu_han_latin' && <span>Pinyin do app tạo</span>}
+                  {text.vietnameseStatus === 'assistant_translation' && <span>Dịch Việt do app tạo</span>}
+                </div>
+              )}
               {(text.sentences ?? []).map((line, index) => (
                 <div className="sentence-card" key={`${text.id}-${index}`}>
                   <div className="sentence-row">

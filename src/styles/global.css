@@ -1717,3 +1717,29 @@ h2 {
 
 /* V2 source-aware additions */
 .source-notice{padding:1rem 1.1rem;border:1px solid #ddd;border-radius:14px;background:#fff;margin:1rem 0}.source-notice.pending{border-style:dashed}.source-notice p{margin:.5rem 0 0}.v2-filter-row{display:flex;gap:.75rem;flex-wrap:wrap;margin:1rem 0}.v2-filter-row input,.v2-filter-row select{min-height:44px;border:1px solid #d8d2c8;border-radius:10px;padding:.65rem .8rem;background:#fff}.v2-search-input{flex:1;min-width:260px}.v2-long-text{white-space:pre-wrap;line-height:1.9;font-size:1.05rem;margin:.75rem 0}.source-partial_source,.source-missing_source{opacity:.85}
+
+/* Audio controls added for V2 lesson text and vocabulary */
+.lesson-audio-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 18px;
+}
+
+.v2-long-text-with-audio {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.v2-long-text-with-audio .v2-long-text {
+  flex: 1;
+}
+
+.sentence-row .audio-button,
+.vocab-topline .audio-button {
+  flex: 0 0 auto;
+}

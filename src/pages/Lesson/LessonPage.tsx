@@ -16,6 +16,28 @@ const tabs: { key: TabKey; label: string }[] = [
   { key: 'exercise', label: 'Bài tập' },
 ]
 
+function buildLessonSpeechText(lesson: LessonV2) {
+  const parts: string[] = []
+
+  for (const dialogue of lesson.dialogues ?? []) {
+    for (const line of dialogue.lines) {
+      if (line.chinese?.trim()) parts.push(line.chinese.trim())
+    }
+  }
+
+  for (const text of lesson.texts ?? []) {
+    if ((text.sentences?.length ?? 0) > 0) {
+      for (const sentence of text.sentences ?? []) {
+        if (sentence.chinese?.trim()) parts.push(sentence.chinese.trim())
+      }
+    } else if (text.chinese?.trim()) {
+      parts.push(text.chinese.trim())
+    }
+  }
+
+  return parts.join('。')
+}
+
 function SourceNotice({ item }: { item: CatalogLessonV2 }) {
   const message =
     item.sourceStatus === 'partial_source'
@@ -107,6 +129,7 @@ export default function LessonPage() {
   }
 
   const grammarItems = [...(lesson.grammar ?? []), ...(lesson.usage ?? [])]
+  const lessonSpeechText = buildLessonSpeechText(lesson)
 
   return (
     <div className="page lesson-page">
@@ -122,7 +145,7 @@ export default function LessonPage() {
           {lesson.titlePinyin && <div className="lesson-main-pinyin">{lesson.titlePinyin}</div>}
           {lesson.titleVi && <div className="lesson-main-vi">{lesson.titleVi}</div>}
         </div>
-        <AudioButton text={lesson.titleZh} label="TTS tiêu đề" />
+        <AudioButton text={lesson.titleZh} label="Nghe tiêu đề" />
       </header>
 
       <div className="lesson-tabs">
@@ -146,13 +169,21 @@ export default function LessonPage() {
             onToggleVietnamese={() => setShowVietnamese((value) => !value)}
           />
 
+          <div className="lesson-audio-toolbar">
+            {lessonSpeechText && <AudioButton text={lessonSpeechText} label="Nghe toàn bài" />}
+            <span className="muted">Audio gốc được ưu tiên khi đã xác minh; hiện chưa có thì dùng TTS tiếng Trung.</span>
+          </div>
+
           {(lesson.dialogues ?? []).map((dialogue) => (
             <article className="text-block" key={dialogue.id}>
               <h2>{dialogue.title || 'Hội thoại'}</h2>
               <div className="sentence-stack">
                 {dialogue.lines.map((line, index) => (
                   <div className="sentence-card" key={`${dialogue.id}-${index}`}>
-                    <div className="sentence-zh">{line.speaker && <strong>{line.speaker}: </strong>}{line.chinese}</div>
+                    <div className="sentence-row">
+                      <div className="sentence-zh">{line.speaker && <strong>{line.speaker}: </strong>}{line.chinese}</div>
+                      <AudioButton text={line.chinese} label="" />
+                    </div>
                     {showPinyin && line.pinyin && <div className="sentence-pinyin">{line.pinyin}</div>}
                     {showVietnamese && line.vietnamese && <div className="sentence-vi">{line.vietnamese}</div>}
                   </div>
@@ -164,11 +195,19 @@ export default function LessonPage() {
           {(lesson.texts ?? []).map((text) => (
             <article className="text-block" key={text.id}>
               {text.title && <h2>{text.title}</h2>}
-              {text.chinese && <div className="v2-long-text">{text.chinese}</div>}
+              {text.chinese && (
+                <div className="v2-long-text-with-audio">
+                  <div className="v2-long-text">{text.chinese}</div>
+                  <AudioButton text={text.chinese} label="Nghe đoạn" />
+                </div>
+              )}
               {showVietnamese && text.vietnamese && <div className="sentence-vi">{text.vietnamese}</div>}
               {(text.sentences ?? []).map((line, index) => (
                 <div className="sentence-card" key={`${text.id}-${index}`}>
-                  <div className="sentence-zh">{line.chinese}</div>
+                  <div className="sentence-row">
+                    <div className="sentence-zh">{line.chinese}</div>
+                    <AudioButton text={line.chinese} label="" />
+                  </div>
                   {showPinyin && line.pinyin && <div className="sentence-pinyin">{line.pinyin}</div>}
                   {showVietnamese && line.vietnamese && <div className="sentence-vi">{line.vietnamese}</div>}
                 </div>
@@ -187,7 +226,14 @@ export default function LessonPage() {
           <div className="vocab-grid">
             {lesson.vocabulary.map((word) => (
               <article className="vocab-card" key={word.id}>
-                <div className="vocab-hanzi">{word.hanzi}</div>
+                <div className="vocab-topline">
+                  <div className="vocab-hanzi">{word.hanzi}</div>
+                  <AudioButton
+                    text={word.hanzi}
+                    label=""
+                    src={word.audioStatus === 'verified' ? word.audio : null}
+                  />
+                </div>
                 <div className="vocab-pinyin">{word.pinyin}</div>
                 <div className="vocab-meaning">{word.meaningVi}</div>
                 {word.hanVietStatus === 'verified' && word.hanViet && <div>Hán Việt: {word.hanViet}</div>}

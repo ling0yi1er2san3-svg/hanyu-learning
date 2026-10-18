@@ -73,6 +73,7 @@ export function buildQuiz(
 
     return {
       id: `q-${item.id}-${index}-${type}`,
+      vocabularyId: item.id,
       type,
       prompt,
       promptZh,

@@ -13,6 +13,7 @@ export interface QuizOption {
 
 export interface QuizQuestion {
   id: string
+  vocabularyId: string
   type: QuizType
   prompt: string
   promptZh?: string

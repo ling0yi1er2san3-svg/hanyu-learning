@@ -3,6 +3,7 @@ import type { Vocabulary } from '../../types/lesson'
 import type { QuizType } from '../../types/quiz'
 import { buildQuiz } from '../../services/quizService'
 import AudioButton from '../AudioPlayer/AudioButton'
+import { recordQuizVocabulary } from '../../services/progressService'
 
 interface Props {
   vocabulary: Vocabulary[]
@@ -48,10 +49,12 @@ export default function QuizPanel({ vocabulary }: Props) {
 
   const choose = (answer: string) => {
     if (answered) return
+    const correct = answer === current.correctAnswer
     setSelected(answer)
-    if (answer === current.correctAnswer) {
+    if (correct) {
       setScore((value) => value + 1)
     }
+    void recordQuizVocabulary(current.vocabularyId, correct)
   }
 
   const next = () => {

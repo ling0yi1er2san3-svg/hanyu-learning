@@ -4,6 +4,7 @@ import type { ReviewRating, VocabularyProgress } from '../../types/progress'
 import AudioButton from '../AudioPlayer/AudioButton'
 import {
   getVocabularyProgress,
+  markVocabularySeen,
   reviewVocabulary,
 } from '../../services/progressService'
 
@@ -32,7 +33,7 @@ export default function FlashcardDeck({ vocabulary }: Props) {
 
   useEffect(() => {
     if (!item) return
-    getVocabularyProgress(item.id).then(setProgress)
+    markVocabularySeen(item.id).then(setProgress)
   }, [item])
 
   if (vocabulary.length === 0) {

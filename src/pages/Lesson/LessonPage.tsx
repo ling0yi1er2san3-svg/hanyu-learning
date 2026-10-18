@@ -4,6 +4,7 @@ import AudioButton from '../../components/AudioPlayer/AudioButton'
 import DisplayControls from '../../components/DisplayControls/DisplayControls'
 import InteractiveExercise from '../../components/InteractiveExercise/InteractiveExercise'
 import { findCatalogLessonV2, loadLessonV2 } from '../../services/dataV2Service'
+import { getGrammarSupport } from '../../services/grammarSupport'
 import { markLessonCompleted, markLessonOpened } from '../../services/progressService'
 import type { CatalogLessonV2, LessonV2 } from '../../types/dataV2'
 
@@ -312,20 +313,42 @@ export default function LessonPage() {
 
       {activeTab === 'grammar' && (
         <section className="lesson-section">
+          <DisplayControls
+            showPinyin={showPinyin}
+            showVietnamese={showVietnamese}
+            onTogglePinyin={() => setShowPinyin((value) => !value)}
+            onToggleVietnamese={() => setShowVietnamese((value) => !value)}
+          />
           <div className="grammar-stack">
-            {grammarItems.map((item) => (
-              <article className="grammar-card" key={item.id}>
-                <h3>{item.pattern}</h3>
-                {item.explanationVi && <p>{item.explanationVi}</p>}
-                {(item.examples ?? []).map((example, index) => (
-                  <div className="sentence-card" key={`${item.id}-${index}`}>
-                    <div className="sentence-zh">{example.chinese}</div>
-                    {showPinyin && example.pinyin && <div className="sentence-pinyin">{example.pinyin}</div>}
-                    {showVietnamese && example.vietnamese && <div className="sentence-vi">{example.vietnamese}</div>}
+            {grammarItems.map((item) => {
+              const support = getGrammarSupport(item.id)
+              return (
+                <article className="grammar-card grammar-card-rich" key={item.id}>
+                  <div className="grammar-card-heading">
+                    <h3>{item.pattern}</h3>
+                    <AudioButton text={item.pattern} label="TTS" title="Đọc cấu trúc ngữ pháp" />
                   </div>
-                ))}
-              </article>
-            ))}
+                  {showPinyin && support.patternPinyin && <div className="grammar-pinyin">{support.patternPinyin}</div>}
+
+                  {support.sourceChinese && <div className="grammar-source-zh">{support.sourceChinese}</div>}
+                  {showPinyin && support.explanationPinyin && <div className="grammar-explanation-pinyin">{support.explanationPinyin}</div>}
+                  {showVietnamese && support.explanationVi && (
+                    <div className="grammar-explanation-vi">
+                      {support.explanationVi}
+                      {support.generatedVi && <span className="generated-badge">Dịch/giải thích do app tạo</span>}
+                    </div>
+                  )}
+
+                  {(item.examples ?? []).map((example, index) => (
+                    <div className="sentence-card" key={`${item.id}-${index}`}>
+                      <div className="sentence-zh">{example.chinese}</div>
+                      {showPinyin && example.pinyin && <div className="sentence-pinyin">{example.pinyin}</div>}
+                      {showVietnamese && example.vietnamese && <div className="sentence-vi">{example.vietnamese}</div>}
+                    </div>
+                  ))}
+                </article>
+              )
+            })}
             {grammarItems.length === 0 && <div className="empty-state">Chưa có mục grammar/usage vật lý.</div>}
           </div>
         </section>

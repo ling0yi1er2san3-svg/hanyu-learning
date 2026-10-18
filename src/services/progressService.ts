@@ -13,6 +13,17 @@ export async function getVocabularyProgress(
   return existing ?? createDefaultProgress(vocabularyId)
 }
 
+export async function markVocabularySeen(
+  vocabularyId: string,
+): Promise<VocabularyProgress> {
+  const existing = await db.vocabularyProgress.get(vocabularyId)
+  if (existing) return existing
+
+  const next = createDefaultProgress(vocabularyId)
+  await db.vocabularyProgress.put(next)
+  return next
+}
+
 export async function reviewVocabulary(
   vocabularyId: string,
   rating: ReviewRating,
@@ -38,6 +49,13 @@ export async function reviewVocabulary(
   )
 
   return next
+}
+
+export async function recordQuizVocabulary(
+  vocabularyId: string,
+  correct: boolean,
+): Promise<VocabularyProgress> {
+  return reviewVocabulary(vocabularyId, correct ? 'good' : 'again')
 }
 
 export async function markLessonOpened(
@@ -82,6 +100,10 @@ export async function getDueVocabularyIds(): Promise<string[]> {
   return all
     .filter((item) => !item.nextReview || item.nextReview <= now)
     .map((item) => item.vocabularyId)
+}
+
+export async function getAllVocabularyProgress(): Promise<VocabularyProgress[]> {
+  return db.vocabularyProgress.toArray()
 }
 
 export async function getProgressSummary() {

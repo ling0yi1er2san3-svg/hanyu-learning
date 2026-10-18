@@ -4,6 +4,7 @@ export type SourceStatus =
   | 'missing_source'
 
 export type VerificationStatus = 'verified' | 'pending'
+export type AudioStatus = 'verified' | 'pending_mapping' | 'missing'
 
 export interface VocabularyV2 {
   id: string
@@ -24,7 +25,7 @@ export interface VocabularyV2 {
   wordType?: string | null
   sourceVerified: boolean
   audio?: string | null
-  audioStatus?: 'verified' | 'pending_mapping' | 'missing'
+  audioStatus?: AudioStatus
   searchKeys?: string[]
 }
 
@@ -34,6 +35,8 @@ export interface LessonSentenceV2 {
   chinese: string
   pinyin?: string
   vietnamese?: string
+  audio?: string | null
+  audioStatus?: AudioStatus
 }
 
 export interface LessonTextV2 {
@@ -41,6 +44,8 @@ export interface LessonTextV2 {
   title?: string
   chinese?: string
   vietnamese?: string
+  audio?: string | null
+  audioStatus?: AudioStatus
   vietnameseStatus?: 'source' | 'assistant_translation'
   sentences?: LessonSentenceV2[]
   sourceVerified: boolean
@@ -78,6 +83,8 @@ export interface AudioTrackV2 {
   src: string
   label?: string
   mappingVerified: boolean
+  sha256?: string
+  verificationMethod?: string
 }
 
 export interface LessonV2 {

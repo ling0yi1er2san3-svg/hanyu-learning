@@ -12,6 +12,7 @@ import {
 type PlayerState = FloatingPlayerPayload & {
   visible: boolean
   minimized: boolean
+  maximized: boolean
   x: number
   y: number
 }
@@ -19,6 +20,7 @@ type PlayerState = FloatingPlayerPayload & {
 const defaultState: PlayerState = {
   visible: false,
   minimized: false,
+  maximized: false,
   x: 24,
   y: 24,
   mode: 'audio',
@@ -57,6 +59,7 @@ export default function FloatingMediaPlayer() {
         ...payload,
         visible: true,
         minimized: false,
+        maximized: false,
       }))
     })
     return unsub
@@ -241,12 +244,13 @@ export default function FloatingMediaPlayer() {
         onEnded={() => setIsPlaying(false)}
       />
       <div
-        className={`floating-media-player ${player.minimized ? 'minimized' : ''}`}
-        style={{ right: `${player.x}px`, bottom: `${player.y}px` }}
+        className={`floating-media-player ${player.minimized ? 'minimized' : ''} ${player.maximized ? 'maximized' : ''}`}
+        style={player.maximized ? undefined : { right: `${player.x}px`, bottom: `${player.y}px` }}
       >
         <div
           className="floating-media-header"
           onPointerDown={(event) => {
+            if (player.maximized || (event.target as HTMLElement).closest('button')) return
             draggingRef.current = {
               startX: event.clientX,
               startY: event.clientY,
@@ -260,8 +264,17 @@ export default function FloatingMediaPlayer() {
             <small>{player.subtitle || currentLabel}</small>
           </div>
           <div className="floating-media-actions">
-            <button className="mini-icon-button" onClick={() => setPlayer((prev) => ({ ...prev, minimized: !prev.minimized }))}>{player.minimized ? '▢' : '—'}</button>
-            <button className="mini-icon-button" onClick={closePlayer}>✕</button>
+            <button
+              className="mini-icon-button"
+              title={player.minimized ? 'Mở lại' : 'Thu nhỏ'}
+              onClick={() => setPlayer((prev) => ({ ...prev, minimized: !prev.minimized, maximized: false }))}
+            >{player.minimized ? '▢' : '—'}</button>
+            <button
+              className="mini-icon-button"
+              title={player.maximized ? 'Khôi phục kích thước' : 'Phóng lớn'}
+              onClick={() => setPlayer((prev) => ({ ...prev, maximized: !prev.maximized, minimized: false }))}
+            >{player.maximized ? '◱' : '⛶'}</button>
+            <button className="mini-icon-button" title="Đóng" onClick={closePlayer}>✕</button>
           </div>
         </div>
 

@@ -39,6 +39,27 @@ function buildLessonSpeechText(lesson: LessonV2) {
   return parts.join('。')
 }
 
+
+function splitLongBlocks(value?: string) {
+  return (value ?? '')
+    .split(/\n\s*\n/g)
+    .map((part) => part.trim())
+    .filter(Boolean)
+}
+
+function zipLongTextBlocks(text: any) {
+  const chinese = splitLongBlocks(text?.chinese)
+  const pinyin = splitLongBlocks(text?.pinyin)
+  const vietnamese = splitLongBlocks(text?.vietnamese)
+  const count = Math.max(chinese.length, pinyin.length, vietnamese.length)
+
+  return Array.from({ length: count }, (_, index) => ({
+    chinese: chinese[index] ?? '',
+    pinyin: pinyin[index] ?? '',
+    vietnamese: vietnamese[index] ?? '',
+  }))
+}
+
 function SourceNotice({ item }: { item: CatalogLessonV2 }) {
   const message =
     item.sourceStatus === 'partial_source'
@@ -210,24 +231,33 @@ export default function LessonPage() {
             </article>
           ))}
 
-          {(lesson.texts ?? []).map((text) => (
+          {(lesson.texts ?? []).map((text) => {
+            const longBlocks = zipLongTextBlocks(text)
+            return (
             <article className="text-block" key={text.id}>
               {text.title && <h2>{text.title}</h2>}
-              {text.chinese && (
-                <div className="v2-long-text-with-audio">
-                  <div className="v2-long-text">{text.chinese}</div>
-                  {text.audioStatus === 'verified' && text.audio && (
-                    <AudioButton text={text.chinese} src={text.audio} label="Gốc" title="Phát audio gốc của đoạn" />
-                  )}
-                  <AudioButton text={text.chinese} label="TTS" title="Đọc đoạn bằng TTS tiếng Trung" />
+
+              {longBlocks.length > 0 && (
+                <div className="v2-long-block-stack">
+                  {longBlocks.map((block, blockIndex) => (
+                    <section className="v2-long-study-block" key={`${text.id}-block-${blockIndex}`}>
+                      <div className="v2-long-block-topline">
+                        {block.chinese && <div className="v2-long-text">{block.chinese}</div>}
+                        {block.chinese && <AudioButton text={block.chinese} label="TTS" title={`Đọc đoạn ${blockIndex + 1} bằng TTS tiếng Trung`} />}
+                      </div>
+                      {showPinyin && block.pinyin && <div className="sentence-pinyin v2-long-pinyin">{block.pinyin}</div>}
+                      {showVietnamese && block.vietnamese && <div className="sentence-vi v2-long-vi">{block.vietnamese}</div>}
+                    </section>
+                  ))}
                 </div>
               )}
-              {showPinyin && (text as any).pinyin && (
-                <div className="sentence-pinyin v2-long-pinyin">{(text as any).pinyin}</div>
+
+              {text.audioStatus === 'verified' && text.audio && text.chinese && (
+                <div className="v2-text-original-audio">
+                  <AudioButton text={text.chinese} src={text.audio} label="Gốc đoạn" title="Phát audio gốc của bài khóa" />
+                </div>
               )}
-              {showVietnamese && text.vietnamese && (
-                <div className="sentence-vi v2-long-vi">{text.vietnamese}</div>
-              )}
+
               {(((text as any).pinyinStatus === 'generated_icu_han_latin') || text.vietnameseStatus === 'assistant_translation') && (
                 <div className="generated-content-note">
                   {(text as any).pinyinStatus === 'generated_icu_han_latin' && <span>Pinyin do app tạo</span>}
@@ -248,7 +278,8 @@ export default function LessonPage() {
                 </div>
               ))}
             </article>
-          ))}
+            )
+          })}
 
           {(lesson.dialogues?.length ?? 0) === 0 && (lesson.texts?.length ?? 0) === 0 && (
             <div className="empty-state">Bài khóa chưa có dữ liệu vật lý trong lesson JSON này.</div>

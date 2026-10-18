@@ -924,15 +924,28 @@
     }
   ],
   "audio": {
-    "tracks": [],
-    "mappingVerified": false
+    "tracks": [
+      {
+        "id": "b3_l03_original_lesson03",
+        "src": "/audio/original/book3/lesson03.mp3",
+        "label": "Gốc",
+        "mappingVerified": true,
+        "trackNumber": 1,
+        "sha256": "3c05ac043ccb5a835aa7ee48a17a6f4e521c3ff09a9ba3853b4acefdc6a05c29",
+        "sourceSha256": "2f3ddb689e97cdb82f435b70e5a8f425ad0d865fcfe674a1b5529fa0857c73af",
+        "verificationMethod": "pdf_embedded_filename_exact_lesson",
+        "contentChecked": false,
+        "transcodedForWeb": true
+      }
+    ],
+    "mappingVerified": true
   },
   "verification": {
     "vocabularyVerified": true,
     "textsVerified": true,
     "grammarVerified": true,
     "exercisesVerified": true,
-    "audioVerified": false,
+    "audioVerified": true,
     "pinyinCoverageComplete": true,
     "pinyinSourceVerified": false,
     "pinyinMethod": "mixed_existing_and_icu_han_latin",

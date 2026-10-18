@@ -375,15 +375,52 @@
     }
   ],
   "audio": {
-    "tracks": [],
-    "mappingVerified": false
+    "tracks": [
+      {
+        "id": "b1_l02_original_lesson02-part1",
+        "src": "/audio/original/book1/lesson02-part1.mp3",
+        "label": "Gốc 1/3",
+        "mappingVerified": true,
+        "trackNumber": 1,
+        "sha256": "a79d35dde381bf90b700df56dd124b759606a273e10e91ef80e1480e0d1bee42",
+        "sourceSha256": "a79d35dde381bf90b700df56dd124b759606a273e10e91ef80e1480e0d1bee42",
+        "verificationMethod": "pdf_embedded_filename_exact_lesson",
+        "contentChecked": false,
+        "transcodedForWeb": false
+      },
+      {
+        "id": "b1_l02_original_lesson02-part2",
+        "src": "/audio/original/book1/lesson02-part2.mp3",
+        "label": "Gốc 2/3",
+        "mappingVerified": true,
+        "trackNumber": 2,
+        "sha256": "003d9547d425059215e01585bdde90283e9c3362fab16d3fa3a31c613114805c",
+        "sourceSha256": "003d9547d425059215e01585bdde90283e9c3362fab16d3fa3a31c613114805c",
+        "verificationMethod": "pdf_embedded_filename_exact_lesson",
+        "contentChecked": false,
+        "transcodedForWeb": false
+      },
+      {
+        "id": "b1_l02_original_lesson02-part3",
+        "src": "/audio/original/book1/lesson02-part3.mp3",
+        "label": "Gốc 3/3",
+        "mappingVerified": true,
+        "trackNumber": 3,
+        "sha256": "8b5b5ce90372d7e715b7c9dee614ca493e8aab71a3834b347fdeccdb0b31bd65",
+        "sourceSha256": "8b5b5ce90372d7e715b7c9dee614ca493e8aab71a3834b347fdeccdb0b31bd65",
+        "verificationMethod": "pdf_embedded_filename_exact_lesson",
+        "contentChecked": false,
+        "transcodedForWeb": false
+      }
+    ],
+    "mappingVerified": true
   },
   "verification": {
     "vocabularyVerified": true,
     "textsVerified": true,
     "grammarVerified": true,
     "exercisesVerified": true,
-    "audioVerified": false,
+    "audioVerified": true,
     "pinyinCoverageComplete": true,
     "pinyinSourceVerified": false,
     "pinyinMethod": "mixed_existing_and_icu_han_latin",

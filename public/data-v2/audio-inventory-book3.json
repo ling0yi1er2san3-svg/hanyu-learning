@@ -1,0 +1,211 @@
+{
+  "book": 3,
+  "sourceDocument": "GT Hán Ngữ 3 (Tập 2 - Quyển thượng)_Chua Giac Ngo(6).pdf",
+  "sourceDocumentSha256": "6ca1056334969b7f441b35106633e866665bfffd0db72aba23fb6788970919aa",
+  "trackCount": 10,
+  "lessonMappedTrackCount": 10,
+  "mappingStatus": "verified_by_embedded_filename_lesson_number",
+  "note": "Audio extracted directly from the supplied PDF embedded files. Lesson mapping is based on exact embedded filenames that encode lesson numbers. WMA was transcoded to MP3 only for browser compatibility; source SHA-256 is retained.",
+  "tracks": [
+    {
+      "trackId": "lesson01",
+      "lesson": 1,
+      "part": 1,
+      "sourceEmbeddedName": "01.wma",
+      "src": "/audio/original/book3/lesson01.mp3",
+      "mappingVerified": true,
+      "mappingBasis": "pdf_embedded_filename_exact_lesson",
+      "sourceSha256": "50f73137058dfd6b859b08ce8fc79a4225eb87fc6d008936f187ad017766953f",
+      "webSha256": "3568f29eaba07246cfca19a92cf10e0db0b2ae64ec03eae29e13e73baef2c720",
+      "transcodedForWeb": true,
+      "sourceCodec": "wma",
+      "technicalMetadata": {
+        "codec": "mp3",
+        "durationSeconds": 417.802,
+        "sampleRateHz": 44100,
+        "channels": 2,
+        "bitRateBps": 128000
+      }
+    },
+    {
+      "trackId": "lesson02",
+      "lesson": 2,
+      "part": 1,
+      "sourceEmbeddedName": "02.wma",
+      "src": "/audio/original/book3/lesson02.mp3",
+      "mappingVerified": true,
+      "mappingBasis": "pdf_embedded_filename_exact_lesson",
+      "sourceSha256": "fb04ec1f1e815f07b3e72773a17efaac807b9b111d83f03072e80517a2568c62",
+      "webSha256": "f2a59bdde073e8856927c07d879339b47132a5431e0d75e12180cb73e6a1eb2a",
+      "transcodedForWeb": true,
+      "sourceCodec": "wma",
+      "technicalMetadata": {
+        "codec": "mp3",
+        "durationSeconds": 77.27,
+        "sampleRateHz": 44100,
+        "channels": 2,
+        "bitRateBps": 128000
+      }
+    },
+    {
+      "trackId": "lesson03",
+      "lesson": 3,
+      "part": 1,
+      "sourceEmbeddedName": "03.wma",
+      "src": "/audio/original/book3/lesson03.mp3",
+      "mappingVerified": true,
+      "mappingBasis": "pdf_embedded_filename_exact_lesson",
+      "sourceSha256": "2f3ddb689e97cdb82f435b70e5a8f425ad0d865fcfe674a1b5529fa0857c73af",
+      "webSha256": "3c05ac043ccb5a835aa7ee48a17a6f4e521c3ff09a9ba3853b4acefdc6a05c29",
+      "transcodedForWeb": true,
+      "sourceCodec": "wma",
+      "technicalMetadata": {
+        "codec": "mp3",
+        "durationSeconds": 348.473,
+        "sampleRateHz": 44100,
+        "channels": 2,
+        "bitRateBps": 128000
+      }
+    },
+    {
+      "trackId": "lesson04",
+      "lesson": 4,
+      "part": 1,
+      "sourceEmbeddedName": "04.wma",
+      "src": "/audio/original/book3/lesson04.mp3",
+      "mappingVerified": true,
+      "mappingBasis": "pdf_embedded_filename_exact_lesson",
+      "sourceSha256": "7c2d1c12d1c5f1d845beabbb477a089c6bff2dc3382379430367be9e2ffc909c",
+      "webSha256": "1d730153dd08d75d7c78d3fe0621104257f8f46b103b7d794cc49dd3029f1c85",
+      "transcodedForWeb": true,
+      "sourceCodec": "wma",
+      "technicalMetadata": {
+        "codec": "mp3",
+        "durationSeconds": 376.163,
+        "sampleRateHz": 44100,
+        "channels": 2,
+        "bitRateBps": 128000
+      }
+    },
+    {
+      "trackId": "lesson05",
+      "lesson": 5,
+      "part": 1,
+      "sourceEmbeddedName": "05.wma",
+      "src": "/audio/original/book3/lesson05.mp3",
+      "mappingVerified": true,
+      "mappingBasis": "pdf_embedded_filename_exact_lesson",
+      "sourceSha256": "74a7feaf8719770ec178136d5676af44d59b2fcf7b3617d8bb89794cbc3106bc",
+      "webSha256": "5e867cc5c3af1fa4f8d1872ac220a3dddfd5f27078a159f2f33a32411e20605b",
+      "transcodedForWeb": true,
+      "sourceCodec": "wma",
+      "technicalMetadata": {
+        "codec": "mp3",
+        "durationSeconds": 469.316,
+        "sampleRateHz": 44100,
+        "channels": 2,
+        "bitRateBps": 128000
+      }
+    },
+    {
+      "trackId": "lesson06",
+      "lesson": 6,
+      "part": 1,
+      "sourceEmbeddedName": "06.wma",
+      "src": "/audio/original/book3/lesson06.mp3",
+      "mappingVerified": true,
+      "mappingBasis": "pdf_embedded_filename_exact_lesson",
+      "sourceSha256": "f9edbfbd5f6ef1b9bb358b17b7393a07e3015a0c8405d791170f161d191734f3",
+      "webSha256": "92c4bb9e8b15ad51db229488e7f174aaa0cf5c1f99a062823a8b93a09c3a6b12",
+      "transcodedForWeb": true,
+      "sourceCodec": "wma",
+      "technicalMetadata": {
+        "codec": "mp3",
+        "durationSeconds": 405.264,
+        "sampleRateHz": 44100,
+        "channels": 2,
+        "bitRateBps": 128000
+      }
+    },
+    {
+      "trackId": "lesson07",
+      "lesson": 7,
+      "part": 1,
+      "sourceEmbeddedName": "07.wma",
+      "src": "/audio/original/book3/lesson07.mp3",
+      "mappingVerified": true,
+      "mappingBasis": "pdf_embedded_filename_exact_lesson",
+      "sourceSha256": "acf3c0e632507a281d7cbd034510c701b04367ed12374cf883ef613a457e1ea9",
+      "webSha256": "210387dc6cf8f1d2375521d4c5926bf29b78caea94e67d1c1cb34791bb74cdaa",
+      "transcodedForWeb": true,
+      "sourceCodec": "wma",
+      "technicalMetadata": {
+        "codec": "mp3",
+        "durationSeconds": 356.963,
+        "sampleRateHz": 44100,
+        "channels": 2,
+        "bitRateBps": 128000
+      }
+    },
+    {
+      "trackId": "lesson08",
+      "lesson": 8,
+      "part": 1,
+      "sourceEmbeddedName": "08.wma",
+      "src": "/audio/original/book3/lesson08.mp3",
+      "mappingVerified": true,
+      "mappingBasis": "pdf_embedded_filename_exact_lesson",
+      "sourceSha256": "f021dea698e417fa667eba44699c2b9110c650b8d86f897af3cbf8b8b2f490cb",
+      "webSha256": "df51014398b011207af5b446227c6b43e2f6688bfa7a600a37594ad12bcaa5b7",
+      "transcodedForWeb": true,
+      "sourceCodec": "wma",
+      "technicalMetadata": {
+        "codec": "mp3",
+        "durationSeconds": 316.839,
+        "sampleRateHz": 44100,
+        "channels": 2,
+        "bitRateBps": 128000
+      }
+    },
+    {
+      "trackId": "lesson09",
+      "lesson": 9,
+      "part": 1,
+      "sourceEmbeddedName": "09.wma",
+      "src": "/audio/original/book3/lesson09.mp3",
+      "mappingVerified": true,
+      "mappingBasis": "pdf_embedded_filename_exact_lesson",
+      "sourceSha256": "2127a48b543b42d5214e120e8bb4dc7bc701243581d16f1487c4becdf221b002",
+      "webSha256": "2d5b48a472f27a65cfa76c4b1a5d6c72a47489d9a85ae49cfc7f15d25a7d7bed",
+      "transcodedForWeb": true,
+      "sourceCodec": "wma",
+      "technicalMetadata": {
+        "codec": "mp3",
+        "durationSeconds": 433.685,
+        "sampleRateHz": 44100,
+        "channels": 2,
+        "bitRateBps": 128000
+      }
+    },
+    {
+      "trackId": "lesson10",
+      "lesson": 10,
+      "part": 1,
+      "sourceEmbeddedName": "10.wma",
+      "src": "/audio/original/book3/lesson10.mp3",
+      "mappingVerified": true,
+      "mappingBasis": "pdf_embedded_filename_exact_lesson",
+      "sourceSha256": "ab842ee3d01227470c5374124f4678f8b6aa051d7368e1bcd372617346adc3e2",
+      "webSha256": "7446b39952a8842d5f7949480075be0bcd2ad69502f822333fbc05e4f5492015",
+      "transcodedForWeb": true,
+      "sourceCodec": "wma",
+      "technicalMetadata": {
+        "codec": "mp3",
+        "durationSeconds": 344.294,
+        "sampleRateHz": 44100,
+        "channels": 2,
+        "bitRateBps": 128000
+      }
+    }
+  ]
+}

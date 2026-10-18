@@ -131,6 +131,7 @@ export default function LessonPage() {
 
   const grammarItems = [...(lesson.grammar ?? []), ...(lesson.usage ?? [])]
   const lessonSpeechText = buildLessonSpeechText(lesson)
+  const verifiedLessonTracks = (lesson.audio?.tracks ?? []).filter((track) => track.mappingVerified && track.src)
 
   return (
     <div className="page lesson-page">
@@ -171,8 +172,21 @@ export default function LessonPage() {
           />
 
           <div className="lesson-audio-toolbar">
-            {lessonSpeechText && <AudioButton text={lessonSpeechText} label="Nghe toàn bài" />}
-            <span className="muted">Audio gốc được ưu tiên khi đã xác minh; hiện chưa có thì dùng TTS tiếng Trung.</span>
+            {verifiedLessonTracks.map((track, index) => (
+              <AudioButton
+                key={track.id}
+                text={lessonSpeechText || lesson.titleZh}
+                src={track.src}
+                label={track.label || `Gốc ${index + 1}`}
+                title="Phát audio gốc đã xác minh"
+              />
+            ))}
+            {lessonSpeechText && <AudioButton text={lessonSpeechText} label="TTS toàn bài" title="Đọc toàn bài bằng TTS tiếng Trung" />}
+            <span className="muted">
+              {verifiedLessonTracks.length > 0
+                ? 'Có audio gốc đã xác minh. TTS vẫn được giữ để luyện riêng.'
+                : 'Chưa có audio gốc được xác minh cho bài này; hiện dùng TTS tiếng Trung.'}
+            </span>
           </div>
 
           {(lesson.dialogues ?? []).map((dialogue) => (
@@ -183,7 +197,10 @@ export default function LessonPage() {
                   <div className="sentence-card" key={`${dialogue.id}-${index}`}>
                     <div className="sentence-row">
                       <div className="sentence-zh">{line.speaker && <strong>{line.speaker}: </strong>}{line.chinese}</div>
-                      <AudioButton text={line.chinese} label="" />
+                      {line.audioStatus === 'verified' && line.audio && (
+                        <AudioButton text={line.chinese} src={line.audio} label="Gốc" title="Phát audio gốc của câu" />
+                      )}
+                      <AudioButton text={line.chinese} label="TTS" title="Đọc câu bằng TTS tiếng Trung" />
                     </div>
                     {showPinyin && line.pinyin && <div className="sentence-pinyin">{line.pinyin}</div>}
                     {showVietnamese && line.vietnamese && <div className="sentence-vi">{line.vietnamese}</div>}
@@ -199,7 +216,10 @@ export default function LessonPage() {
               {text.chinese && (
                 <div className="v2-long-text-with-audio">
                   <div className="v2-long-text">{text.chinese}</div>
-                  <AudioButton text={text.chinese} label="Nghe đoạn" />
+                  {text.audioStatus === 'verified' && text.audio && (
+                    <AudioButton text={text.chinese} src={text.audio} label="Gốc" title="Phát audio gốc của đoạn" />
+                  )}
+                  <AudioButton text={text.chinese} label="TTS" title="Đọc đoạn bằng TTS tiếng Trung" />
                 </div>
               )}
               {showVietnamese && text.vietnamese && <div className="sentence-vi">{text.vietnamese}</div>}
@@ -207,7 +227,10 @@ export default function LessonPage() {
                 <div className="sentence-card" key={`${text.id}-${index}`}>
                   <div className="sentence-row">
                     <div className="sentence-zh">{line.chinese}</div>
-                    <AudioButton text={line.chinese} label="" />
+                    {line.audioStatus === 'verified' && line.audio && (
+                      <AudioButton text={line.chinese} src={line.audio} label="Gốc" title="Phát audio gốc của câu" />
+                    )}
+                    <AudioButton text={line.chinese} label="TTS" title="Đọc câu bằng TTS tiếng Trung" />
                   </div>
                   {showPinyin && line.pinyin && <div className="sentence-pinyin">{line.pinyin}</div>}
                   {showVietnamese && line.vietnamese && <div className="sentence-vi">{line.vietnamese}</div>}
@@ -229,11 +252,12 @@ export default function LessonPage() {
               <article className="vocab-card" key={word.id}>
                 <div className="vocab-topline">
                   <div className="vocab-hanzi">{word.hanzi}</div>
-                  <AudioButton
-                    text={word.hanzi}
-                    label=""
-                    src={word.audioStatus === 'verified' ? word.audio : null}
-                  />
+                  <div className="audio-choice-row">
+                    {word.audioStatus === 'verified' && word.audio && (
+                      <AudioButton text={word.hanzi} label="Gốc" src={word.audio} title="Phát audio gốc của từ" />
+                    )}
+                    <AudioButton text={word.hanzi} label="TTS" title="Đọc từ bằng TTS tiếng Trung" />
+                  </div>
                 </div>
                 <div className="vocab-pinyin">{word.pinyin}</div>
                 <div className="vocab-meaning">{word.meaningVi}</div>

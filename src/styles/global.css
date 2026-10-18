@@ -1936,3 +1936,11 @@ h2 {
   .exercise-feedback.neutral, .exercise-order-answer button { background: #37312c; color: #dfd4c7; }
   .secondary-button { border-color: #4b443d; }
 }
+
+/* Original audio + TTS source choices */
+.audio-choice-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}

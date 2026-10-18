@@ -11,6 +11,7 @@ const validators = [
   ['Vietnamese translation', 'scripts/validate-translation-v2.mjs'],
   ['Audio inventory policy', 'scripts/validate-audio-inventory-v2.mjs'],
   ['Audio technical integrity', 'scripts/validate-audio-integrity-v2.mjs'],
+  ['Original audio Q1-Q6', 'scripts/validate-original-audio-all.mjs'],
   ['Hán-Việt verified subset', 'scripts/validate-han-viet-v2.mjs'],
 ]
 
@@ -18,7 +19,7 @@ const failures = []
 console.log('\n=== HANYU LEARNING V2 RELEASE CHECK ===')
 console.log('Canonical data root: public/data-v2')
 console.log('Policy: public/data is legacy/fallback and is NOT double-counted.')
-console.log('Policy: pending Hán-Việt and mappingVerified=false are valid; fabricated verification is not.')
+console.log('Policy: pending Hán-Việt/audio are valid; verified audio requires SHA-256 evidence. Q1-Q4 may be verified by exact PDF embedded filenames; Q5-Q6 still require user listening confirmation.')
 
 for (const [label, rel] of validators) {
   const file = path.join(cwd, rel)

@@ -1,4 +1,4 @@
-param(
+﻿param(
   [string]$Book5Source = "",
   [string]$Book6Source = ""
 )
@@ -24,6 +24,11 @@ function Set-Prop($Object, [string]$Name, $Value) {
     $Object.$Name = $Value
   }
 }
+function Read-JsonUtf8([string]$Path) {
+  $utf8 = New-Object System.Text.UTF8Encoding($false)
+  $text = [System.IO.File]::ReadAllText($Path, $utf8)
+  return ($text | ConvertFrom-Json)
+}
 function Write-Utf8NoBom([string]$Path, [string]$Text) {
   $utf8 = New-Object System.Text.UTF8Encoding($false)
   [System.IO.File]::WriteAllText($Path, $Text, $utf8)
@@ -47,34 +52,33 @@ function Get-Extractor {
 function Resolve-AudioFolder([string]$Source, [int]$Book) {
   $Source = Clean-InputPath $Source
   if (-not $Source) { return $null }
-  if (-not (Test-Path -LiteralPath $Source)) { Fail "Không tìm thấy nguồn Quyển $Book: $Source" 11 }
+  if (-not (Test-Path -LiteralPath $Source)) { Fail "Khong tim thay nguon Quyen ${Book}: $Source" 11 }
 
   $item = Get-Item -LiteralPath $Source
   if ($item.PSIsContainer) { return $item.FullName }
 
   if ($item.Extension.ToLowerInvariant() -ne ".rar") {
-    Fail "Nguồn Quyển $Book phải là thư mục MP3 đã giải nén hoặc file .RAR." 12
+    Fail "Nguon Quyen ${Book} phai la thu muc MP3 da giai nen hoac file .RAR." 12
   }
 
   $extractor = Get-Extractor
   if (-not $extractor) {
-    Write-Host ""
-    Write-Warn "Máy chưa có 7-Zip/WinRAR mà script có thể gọi tự động."
-    Write-Host "Hãy giải nén RAR bằng phần mềm bạn đang có, rồi chạy lại và kéo THƯ MỤC đã giải nén vào cửa sổ."
-    Fail "Không thể tự giải nén RAR." 13
+    Write-Warn "May chua co 7-Zip/WinRAR ma script co the goi tu dong."
+    Write-Host "Hay giai nen RAR, roi chay lai va keo THU MUC da giai nen vao cua so."
+    Fail "Khong the tu giai nen RAR." 13
   }
 
   $temp = Join-Path $env:TEMP "hanyu-original-audio-book$Book"
   if (Test-Path -LiteralPath $temp) { Remove-Item -LiteralPath $temp -Recurse -Force }
   New-Item -ItemType Directory -Path $temp | Out-Null
 
-  Write-Info "Đang giải nén Quyển $Book bằng $([IO.Path]::GetFileName($extractor)) ..."
+  Write-Info "Dang giai nen Quyen ${Book}..."
   if ([IO.Path]::GetFileName($extractor).ToLowerInvariant().StartsWith("7z")) {
     & $extractor x "-o$temp" -y -- $item.FullName | Out-Host
   } else {
     & $extractor x -ibck -y $item.FullName "$temp\" | Out-Host
   }
-  if ($LASTEXITCODE -ne 0) { Fail "Giải nén Quyển $Book thất bại." 14 }
+  if ($LASTEXITCODE -ne 0) { Fail "Giai nen Quyen ${Book} that bai." 14 }
   return $temp
 }
 function Get-PreviewText($Lesson) {
@@ -89,60 +93,53 @@ function Get-PreviewText($Lesson) {
     elseif ($t.sentences -and $t.sentences.Count -gt 0) { $text = [string]$t.sentences[0].chinese }
   }
   $text = ($text -replace "\s+", " ").Trim()
-  if ($text.Length -gt 120) { return $text.Substring(0,120) + "…" }
+  if ($text.Length -gt 120) { return $text.Substring(0,120) + "..." }
   return $text
 }
 function Read-Choice([string]$Prompt) {
   while ($true) {
     $v = (Read-Host $Prompt).Trim().ToUpperInvariant()
     if ($v -in @("Y","N","S","R","Q")) { return $v }
-    Write-Warn "Chỉ nhập Y, N, S, R hoặc Q."
+    Write-Warn "Chi nhap Y, N, S, R hoac Q."
   }
 }
 
-$ProjectRoot = Resolve-Path (Join-Path $PSScriptRoot "..\..")
+$ProjectRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 Set-Location $ProjectRoot
 
-if (-not (Test-Path "public\data-v2\audio-inventory-book5.json")) { Fail "Không đúng thư mục Hanyu Learning V2 (thiếu audio inventory)." 20 }
-if (-not (Test-Path "public\data-v2\audio-inventory-book6.json")) { Fail "Không đúng thư mục Hanyu Learning V2 (thiếu audio inventory)." 21 }
+if (-not (Test-Path "public\data-v2\audio-inventory-book5.json")) { Fail "Thieu audio inventory Q5." 20 }
+if (-not (Test-Path "public\data-v2\audio-inventory-book6.json")) { Fail "Thieu audio inventory Q6." 21 }
 
 Write-Host "============================================================" -ForegroundColor DarkCyan
-Write-Host " HANYU LEARNING V2 - MAP AUDIO GỐC Q5/Q6" -ForegroundColor White
-Write-Host " Chỉ xác minh khi bạn NGHE và bấm Y." -ForegroundColor White
+Write-Host " HANYU LEARNING V2 - MAP AUDIO GOC Q5/Q6" -ForegroundColor White
+Write-Host " Chi xac minh khi ban NGHE va bam Y." -ForegroundColor White
 Write-Host "============================================================" -ForegroundColor DarkCyan
 Write-Host ""
 
-# Bản full-audio đóng sẵn source tracks Q5/Q6 trong project.
 $bundled5 = Join-Path $ProjectRoot "public\audio\source\book5"
 $bundled6 = Join-Path $ProjectRoot "public\audio\source\book6"
 if (-not $Book5Source -and (Test-Path -LiteralPath $bundled5)) {
   $Book5Source = $bundled5
-  Write-Ok "Dùng audio Q5 đã đóng sẵn trong project; không cần chọn RAR."
+  Write-Ok "Dung audio Q5 da co san trong project."
 }
 if (-not $Book6Source -and (Test-Path -LiteralPath $bundled6)) {
   $Book6Source = $bundled6
-  Write-Ok "Dùng audio Q6 đã đóng sẵn trong project; không cần chọn RAR."
+  Write-Ok "Dung audio Q6 da co san trong project."
 }
 if (-not $Book5Source) {
-  Write-Host "Kéo file Audio-han-ngu-5.rar HOẶC thư mục MP3 Quyển 5 vào đây rồi Enter."
-  Write-Host "Nhấn Enter trống nếu muốn bỏ qua Quyển 5."
-  $Book5Source = Read-Host "Q5"
+  $Book5Source = Read-Host "Q5 - keo RAR hoac thu muc MP3 vao day (Enter de bo qua)"
 }
 if (-not $Book6Source) {
-  Write-Host ""
-  Write-Host "Kéo file Audio-han-ngu-6.rar HOẶC thư mục MP3 Quyển 6 vào đây rồi Enter."
-  Write-Host "Nhấn Enter trống nếu muốn bỏ qua Quyển 6."
-  $Book6Source = Read-Host "Q6"
+  $Book6Source = Read-Host "Q6 - keo RAR hoac thu muc MP3 vao day (Enter de bo qua)"
 }
 
 $sources = @{
   5 = Resolve-AudioFolder $Book5Source 5
   6 = Resolve-AudioFolder $Book6Source 6
 }
+if (-not $sources[5] -and -not $sources[6]) { Fail "Ban chua chon nguon audio nao." 22 }
 
-if (-not $sources[5] -and -not $sources[6]) { Fail "Bạn chưa chọn nguồn audio nào." 22 }
-
-$report = New-Object System.Collections.Generic.List[object]
+$report = @()
 $totalConfirmed = 0
 $totalRecognized = 0
 
@@ -150,13 +147,12 @@ foreach ($book in @(5,6)) {
   $sourceDir = $sources[$book]
   if (-not $sourceDir) { continue }
 
-  $inventoryPath = Join-Path $ProjectRoot "public\data-v2\audio-inventory-book$book.json"
-  $inventory = Get-Content -LiteralPath $inventoryPath -Raw | ConvertFrom-Json
+  $inventoryPath = Join-Path $ProjectRoot ("public\data-v2\audio-inventory-book{0}.json" -f $book)
+  $inventory = Read-JsonUtf8 $inventoryPath
   $allMp3 = @(Get-ChildItem -LiteralPath $sourceDir -Recurse -File -Filter *.mp3)
-  if ($allMp3.Count -eq 0) { Write-Warn "Quyển $book: không tìm thấy MP3."; continue }
+  if ($allMp3.Count -eq 0) { Write-Warn "Quyen ${book}: khong tim thay MP3."; continue }
 
-  Write-Info "Quyển $book: tìm thấy $($allMp3.Count) file MP3. Đang đối chiếu SHA-256..."
-
+  Write-Info "Quyen ${book}: tim thay $($allMp3.Count) MP3; dang doi chieu SHA-256..."
   $hashToTrack = @{}
   foreach ($track in @($inventory.tracks)) {
     $sha = ([string]$track.technicalMetadata.sha256).ToLowerInvariant()
@@ -172,66 +168,65 @@ foreach ($book in @(5,6)) {
     }
   }
   $totalRecognized += $recognized.Count
-  Write-Ok "Quyển $book: nhận diện chính xác $($recognized.Count)/$($inventory.tracks.Count) track theo SHA-256."
+  Write-Ok "Quyen ${book}: nhan dien dung $($recognized.Count)/$($inventory.tracks.Count) track theo SHA-256."
 
-  $lessonTracks = @($inventory.tracks | Where-Object { $null -ne $_.candidateLesson }) | Sort-Object {[int]$_.trackNumber}
+  $lessonTracks = @($inventory.tracks | Where-Object { $null -ne $_.candidateLesson } | Sort-Object {[int]$_.trackNumber})
+  $missingLessons = @()
+
   foreach ($track in $lessonTracks) {
     $tn = [int]$track.trackNumber
     $lessonNo = [int]$track.candidateLesson
-    if (-not $recognized.ContainsKey($tn)) {
-      Write-Warn "Q$book Track $tn: không tìm thấy file có SHA-256 đúng; bỏ qua."
-      continue
-    }
-
     $lessonFile = Join-Path $ProjectRoot ("public\data-v2\book{0}\lesson{1:D2}.json" -f $book,$lessonNo)
+
     if (-not (Test-Path -LiteralPath $lessonFile)) {
-      Write-Warn "Không tìm thấy lesson JSON: $lessonFile"
+      $missingLessons += $lessonNo
       continue
     }
-    $lesson = Get-Content -LiteralPath $lessonFile -Raw | ConvertFrom-Json
-    $rec = $recognized[$tn]
+    if (-not $recognized.ContainsKey($tn)) {
+      Write-Warn "Q${book} Track ${tn}: khong co file dung SHA-256; bo qua."
+      continue
+    }
 
-    # Already verified and same hash: leave untouched.
+    $lesson = Read-JsonUtf8 $lessonFile
+    $rec = $recognized[$tn]
     $already = @($lesson.audio.tracks | Where-Object { $_.mappingVerified -eq $true -and ([string]$_.sha256).ToLowerInvariant() -eq $rec.Sha })
     if ($already.Count -gt 0) {
-      Write-Ok ("Q{0} Bài {1:D2}: đã xác minh track này trước đó." -f $book,$lessonNo)
+      Write-Ok ("Q{0} Bai {1:D2}: da xac minh truoc do." -f $book,$lessonNo)
       continue
     }
 
     Write-Host ""
     Write-Host "------------------------------------------------------------" -ForegroundColor DarkGray
-    Write-Host ("QUYỂN {0} - TRACK {1:D2}  ({2:N1}s)" -f $book,$tn,[double]$track.technicalMetadata.durationSeconds) -ForegroundColor Cyan
-    Write-Host ("Ứng viên: Bài {0:D2} - {1}" -f $lessonNo,$lesson.titleZh) -ForegroundColor White
+    Write-Host ("QUYEN {0} - TRACK {1:D2} ({2:N1}s)" -f $book,$tn,[double]$track.technicalMetadata.durationSeconds) -ForegroundColor Cyan
+    Write-Host ("Ung vien: Bai {0:D2} - {1}" -f $lessonNo,$lesson.titleZh) -ForegroundColor White
     if ($lesson.titleVi) { Write-Host ("          {0}" -f $lesson.titleVi) -ForegroundColor Gray }
     $preview = Get-PreviewText $lesson
-    if ($preview) { Write-Host ("Câu đầu:  {0}" -f $preview) -ForegroundColor Gray }
-    Write-Host ("File:     {0}" -f $rec.File.Name) -ForegroundColor DarkGray
-    Write-Host ""
-    Write-Info "Mở audio bằng trình phát mặc định..."
+    if ($preview) { Write-Host ("Cau dau:   {0}" -f $preview) -ForegroundColor Gray }
+    Write-Host ("File:      {0}" -f $rec.File.Name) -ForegroundColor DarkGray
+    Write-Info "Mo audio bang trinh phat mac dinh..."
     Start-Process -FilePath $rec.File.FullName
 
+    $choice = $null
     while ($true) {
-      $choice = Read-Choice "Y=Đúng bài | N=Không đúng | S=Bỏ qua | R=Nghe lại | Q=Dừng"
+      $choice = Read-Choice "Y=Dung | N=Khong dung | S=Bo qua | R=Nghe lai | Q=Dung"
       if ($choice -eq "R") { Start-Process -FilePath $rec.File.FullName; continue }
-      if ($choice -eq "Q") { Write-Warn "Bạn đã dừng xác minh."; break }
+      if ($choice -eq "Q") { Write-Warn "Ban da dung xac minh."; break }
       if ($choice -eq "N") {
-        Write-Warn "Không map Track $tn vào Bài $lessonNo. mappingVerified vẫn false."
-        $report.Add([pscustomobject]@{book=$book;track=$tn;candidateLesson=$lessonNo;result="rejected_or_mismatch";sha256=$rec.Sha})
+        Write-Warn "Khong map Track $tn vao Bai $lessonNo."
+        $report += [pscustomobject]@{book=$book;track=$tn;candidateLesson=$lessonNo;result="rejected_or_mismatch";sha256=$rec.Sha}
         break
       }
       if ($choice -eq "S") {
-        Write-Info "Bỏ qua Track $tn; chưa thay đổi mapping."
-        $report.Add([pscustomobject]@{book=$book;track=$tn;candidateLesson=$lessonNo;result="skipped";sha256=$rec.Sha})
+        Write-Info "Bo qua Track $tn; chua thay doi mapping."
+        $report += [pscustomobject]@{book=$book;track=$tn;candidateLesson=$lessonNo;result="skipped";sha256=$rec.Sha}
         break
       }
       if ($choice -eq "Y") {
-        # Nếu track đang nằm trong public/audio/source của project, dùng trực tiếp để tránh nhân đôi 100+ MB.
         $publicRoot = [IO.Path]::GetFullPath((Join-Path $ProjectRoot "public"))
         $audioFull = [IO.Path]::GetFullPath($rec.File.FullName)
         if ($audioFull.StartsWith($publicRoot, [System.StringComparison]::OrdinalIgnoreCase)) {
           $rel = $audioFull.Substring($publicRoot.Length).TrimStart('\','/') -replace '\\','/'
           $src = "/" + $rel
-          $destSha = $rec.Sha
         } else {
           $destDir = Join-Path $ProjectRoot ("public\audio\original\book{0}" -f $book)
           New-Item -ItemType Directory -Force -Path $destDir | Out-Null
@@ -239,19 +234,16 @@ foreach ($book in @(5,6)) {
           $destFile = Join-Path $destDir $destName
           Copy-Item -LiteralPath $rec.File.FullName -Destination $destFile -Force
           $destSha = (Get-FileHash -LiteralPath $destFile -Algorithm SHA256).Hash.ToLowerInvariant()
-          if ($destSha -ne $rec.Sha) { Fail "SHA-256 sau khi copy không khớp; dừng để bảo vệ dữ liệu." 30 }
+          if ($destSha -ne $rec.Sha) { Fail "SHA-256 sau khi copy khong khop." 30 }
           $src = "/audio/original/book$book/$destName"
         }
 
-        if ($null -eq $lesson.audio) {
-          Set-Prop $lesson "audio" ([pscustomobject]@{tracks=@();mappingVerified=$false})
-        }
+        if ($null -eq $lesson.audio) { Set-Prop $lesson "audio" ([pscustomobject]@{tracks=@();mappingVerified=$false}) }
         if ($null -eq $lesson.audio.tracks) { Set-Prop $lesson.audio "tracks" @() }
-
         $newTrack = [pscustomobject]@{
           id = ("b{0}_l{1:D2}_original_track{2:D2}" -f $book,$lessonNo,$tn)
           src = $src
-          label = ("Gốc - Track {0:D2}" -f $tn)
+          label = ("Goc - Track {0:D2}" -f $tn)
           mappingVerified = $true
           trackNumber = $tn
           sha256 = $rec.Sha
@@ -262,9 +254,8 @@ foreach ($book in @(5,6)) {
         $lesson.audio.tracks = @($kept + $newTrack)
         $lesson.audio.mappingVerified = $true
         if ($lesson.verification) { Set-Prop $lesson.verification "audioVerified" $true }
-
         foreach ($cand in @($lesson.audio.candidateTracks)) {
-          if ([int]$cand.trackNumber -eq $tn) {
+          if (($null -ne $cand.trackNumber) -and ([int]$cand.trackNumber -eq $tn)) {
             Set-Prop $cand "mappingVerified" $true
             Set-Prop $cand "mappingBasis" "user_listen_confirmed"
             Set-Prop $cand "contentChecked" $true
@@ -279,12 +270,17 @@ foreach ($book in @(5,6)) {
         Set-Prop $track "verifiedAt" (Get-Date).ToUniversalTime().ToString("o")
 
         $totalConfirmed += 1
-        $report.Add([pscustomobject]@{book=$book;track=$tn;lesson=$lessonNo;result="verified";src=$src;sha256=$rec.Sha})
-        Write-Ok ("Đã map Q{0} Track {1:D2} -> Bài {2:D2}." -f $book,$tn,$lessonNo)
+        $report += [pscustomobject]@{book=$book;track=$tn;lesson=$lessonNo;result="verified";src=$src;sha256=$rec.Sha}
+        Write-Ok ("Da map Q{0} Track {1:D2} -> Bai {2:D2}." -f $book,$tn,$lessonNo)
         break
       }
     }
     if ($choice -eq "Q") { break }
+  }
+
+  if ($missingLessons.Count -gt 0) {
+    $unique = @($missingLessons | Sort-Object -Unique)
+    Write-Info ("Quyen ${book}: bo qua cac bai chua co JSON trong app: " + ($unique -join ', '))
   }
 
   $verifiedCount = @($inventory.tracks | Where-Object { $_.candidateLesson -ne $null -and $_.mappingVerified -eq $true }).Count
@@ -298,21 +294,18 @@ foreach ($book in @(5,6)) {
 }
 
 $reportPath = Join-Path $ProjectRoot "ORIGINAL_AUDIO_MAPPING_REPORT.json"
-[pscustomobject]@{
+$reportObject = [pscustomobject]@{
   generatedAt = (Get-Date).ToUniversalTime().ToString("o")
   recognizedBySha256 = $totalRecognized
   newlyConfirmed = $totalConfirmed
-  mappings = @($report)
-} | ConvertTo-Json -Depth 20 | ForEach-Object { Write-Utf8NoBom $reportPath $_ }
+  mappings = $report
+}
+Save-Json $reportObject $reportPath
 
 Write-Host ""
 Write-Host "============================================================" -ForegroundColor DarkCyan
-Write-Ok "Hoàn tất mapper. Newly confirmed: $totalConfirmed"
+Write-Ok "Hoan tat mapper. Newly confirmed: $totalConfirmed"
 Write-Host "Report: $reportPath"
-Write-Host ""
-Write-Host "Tiếp theo:" -ForegroundColor White
-Write-Host "1. Chạy: node scripts\validate-audio-integrity-v2.mjs" -ForegroundColor Gray
-Write-Host "2. Nếu PASS, chạy PUSH_TO_GITHUB.bat" -ForegroundColor Gray
-Write-Host "3. GitHub Actions xanh -> Ctrl+F5 trên website" -ForegroundColor Gray
+Write-Host "Tiep theo: chay PUSH_TO_GITHUB.bat" -ForegroundColor Gray
 Write-Host "============================================================" -ForegroundColor DarkCyan
 exit 0

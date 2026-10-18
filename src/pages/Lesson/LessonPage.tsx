@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import AudioButton from '../../components/AudioPlayer/AudioButton'
 import DisplayControls from '../../components/DisplayControls/DisplayControls'
+import InteractiveExercise from '../../components/InteractiveExercise/InteractiveExercise'
 import { findCatalogLessonV2, loadLessonV2 } from '../../services/dataV2Service'
 import { markLessonCompleted, markLessonOpened } from '../../services/progressService'
 import type { CatalogLessonV2, LessonV2 } from '../../types/dataV2'
@@ -281,14 +282,24 @@ export default function LessonPage() {
 
       {activeTab === 'exercise' && (
         <section className="lesson-section">
-          <div className="list-stack">
-            {(lesson.exerciseGroups ?? []).map((group) => (
-              <article className="list-card" key={group.id}>
-                <div className="grow"><strong>{group.title}</strong>{group.type && <span>{group.type}</span>}</div>
-              </article>
+          {(lesson.exerciseGroups?.length ?? 0) > 0 && (
+            <div className="exercise-source-note">
+              <strong>Bài luyện tương tác</strong>
+              <span>Tên dạng bài lấy từ giáo trình; câu hỏi bên dưới được app tạo từ chính từ vựng, hội thoại và câu thật của bài này. Không giả là đáp án chính thức của sách.</span>
+            </div>
+          )}
+          <div className="exercise-group-stack">
+            {(lesson.exerciseGroups ?? []).map((group, index) => (
+              <details className="exercise-group-card" key={group.id} open={index === 0}>
+                <summary>
+                  <div className="grow"><strong>{group.title}</strong>{group.type && <span>{group.type}</span>}</div>
+                  <span className="exercise-open-label">Mở bài</span>
+                </summary>
+                <InteractiveExercise lesson={lesson} group={group} />
+              </details>
             ))}
           </div>
-          {(lesson.exerciseGroups?.length ?? 0) === 0 && <div className="empty-state">Chưa có exerciseGroups vật lý.</div>}
+          {(lesson.exerciseGroups?.length ?? 0) === 0 && <div className="empty-state">Bài này chưa có nhóm bài tập trong dữ liệu nguồn.</div>}
         </section>
       )}
 

@@ -1404,17 +1404,27 @@
                        ],
     "audio":  {
                   "tracks":  [
-
+                                 {
+                                     "id":  "b6_l21_original_track08",
+                                     "src":  "/audio/source/book6/track08.mp3",
+                                     "label":  "Goc - Track 08",
+                                     "mappingVerified":  true,
+                                     "trackNumber":  8,
+                                     "sha256":  "90ab796f8e4c31f2475f14c70748d3f09b63e15e75a673686bcfbc7bbfaf8e89",
+                                     "verificationMethod":  "user_listen_confirmed",
+                                     "verifiedAt":  "2026-10-18T09:50:01.8368181Z"
+                                 }
                              ],
-                  "mappingVerified":  false,
+                  "mappingVerified":  true,
                   "candidateTracks":  [
                                           {
                                               "trackNumber":  8,
                                               "filename":  "CD Track 08.mp3",
                                               "archive":  "Audio-han-ngu-6(1).rar",
                                               "sizeBytes":  4991564,
-                                              "mappingVerified":  false,
-                                              "mappingBasis":  "sequential_track_number_only"
+                                              "mappingVerified":  true,
+                                              "mappingBasis":  "user_listen_confirmed",
+                                              "contentChecked":  true
                                           }
                                       ]
               },
@@ -1423,7 +1433,7 @@
                          "textsVerified":  true,
                          "grammarVerified":  true,
                          "exercisesVerified":  true,
-                         "audioVerified":  false,
+                         "audioVerified":  true,
                          "pinyinCoverageComplete":  true,
                          "pinyinSourceVerified":  false,
                          "pinyinMethod":  "mixed_existing_and_icu_han_latin",

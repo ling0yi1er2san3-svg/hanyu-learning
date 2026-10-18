@@ -236,8 +236,8 @@
                        "candidateBook":  5,
                        "candidateLesson":  9,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  444.882,
@@ -248,7 +248,10 @@
                                                  "sha256":  "815afc68289af3ff1076d601a4c8c6030f2c7e21f83bd57889e6af5b13726636",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  9,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:49:33.1105255Z"
                    },
                    {
                        "trackNumber":  10,
@@ -258,8 +261,8 @@
                        "candidateBook":  5,
                        "candidateLesson":  10,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  369.545,
@@ -270,7 +273,10 @@
                                                  "sha256":  "f5b02e9a20165574a9eaa42bf57c3847e951bca386dcbbeb5f53ae7af0606051",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  10,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:49:38.3224826Z"
                    },
                    {
                        "trackNumber":  11,
@@ -371,5 +377,5 @@
                          },
     "technicalMetadataStatus":  "verified_file_integrity_and_stream_metadata_only",
     "contentVerificationStatus":  "partially_user_listen_verified",
-    "verifiedLessonTrackCount":  8
+    "verifiedLessonTrackCount":  10
 }

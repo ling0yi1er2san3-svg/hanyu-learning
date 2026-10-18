@@ -36,8 +36,8 @@
                        "candidateBook":  6,
                        "candidateLesson":  14,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  1501.822,
@@ -48,7 +48,10 @@
                                                  "sha256":  "ac8eee22246111a7cba8de1cca0a768b8387924c9da5ae1802d2895e14f99661",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  14,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:49:40.2000164Z"
                    },
                    {
                        "trackNumber":  2,
@@ -58,8 +61,8 @@
                        "candidateBook":  6,
                        "candidateLesson":  15,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  2080.748,
@@ -70,7 +73,10 @@
                                                  "sha256":  "961398763661a13aff6c235cbeb6cb1cd4a17087e1a65cb584300b14183c6dad",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  15,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:49:42.4062398Z"
                    },
                    {
                        "trackNumber":  3,
@@ -80,8 +86,8 @@
                        "candidateBook":  6,
                        "candidateLesson":  16,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  917.111,
@@ -92,7 +98,10 @@
                                                  "sha256":  "8683527b25b4f27dc0f01db427a29f45b2d8144d971e2a72075f8afa0a66d7fe",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  16,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:49:47.7797732Z"
                    },
                    {
                        "trackNumber":  4,
@@ -102,8 +111,8 @@
                        "candidateBook":  6,
                        "candidateLesson":  17,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  938.076,
@@ -114,7 +123,10 @@
                                                  "sha256":  "dba33f735303fb94a7f1f612a59be791582299a9a58d61bbea56ae2ba62fa418",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  17,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:49:51.3975324Z"
                    },
                    {
                        "trackNumber":  5,
@@ -124,8 +136,8 @@
                        "candidateBook":  6,
                        "candidateLesson":  18,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  1008.116,
@@ -136,7 +148,10 @@
                                                  "sha256":  "b0bda83004df96f2ce8c224f538ec6e5c1ccee285a198c065eb1dd92bebea26e",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  18,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:49:54.4333860Z"
                    },
                    {
                        "trackNumber":  6,
@@ -146,8 +161,8 @@
                        "candidateBook":  6,
                        "candidateLesson":  19,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  696.96,
@@ -158,7 +173,10 @@
                                                  "sha256":  "21e8550c076822927b624f676b2ad16a520f541f8cf0e7e6a7970413ffe0e785",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  19,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:49:56.8846679Z"
                    },
                    {
                        "trackNumber":  7,
@@ -168,8 +186,8 @@
                        "candidateBook":  6,
                        "candidateLesson":  20,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  1980.05,
@@ -180,7 +198,10 @@
                                                  "sha256":  "de40c923e1d43a848cab59a872be496ce427cd76e0b52ad2823cbf61ca34a095",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  20,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:49:59.3535124Z"
                    },
                    {
                        "trackNumber":  8,
@@ -190,8 +211,8 @@
                        "candidateBook":  6,
                        "candidateLesson":  21,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  969.733,
@@ -202,7 +223,10 @@
                                                  "sha256":  "90ab796f8e4c31f2475f14c70748d3f09b63e15e75a673686bcfbc7bbfaf8e89",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  21,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:50:01.8388435Z"
                    },
                    {
                        "trackNumber":  9,
@@ -212,8 +236,8 @@
                        "candidateBook":  6,
                        "candidateLesson":  22,
                        "mappingBasis":  "sequential_track_number_only",
-                       "mappingVerified":  false,
-                       "contentChecked":  false,
+                       "mappingVerified":  true,
+                       "contentChecked":  true,
                        "technicalMetadata":  {
                                                  "codec":  "mp3",
                                                  "durationSeconds":  1125.085,
@@ -224,7 +248,10 @@
                                                  "sha256":  "58621a30ca89bc3de2a21f87c3ca6dc20c4373923a964874938978c99775e001",
                                                  "checkedWith":  "ffprobe + SHA-256"
                                              },
-                       "technicalMetadataChecked":  true
+                       "technicalMetadataChecked":  true,
+                       "verifiedLesson":  22,
+                       "verificationMethod":  "user_listen_confirmed",
+                       "verifiedAt":  "2026-10-18T09:50:04.2876309Z"
                    },
                    {
                        "trackNumber":  10,
@@ -346,6 +373,6 @@
                              "integrityMethod":  "SHA-256 over supplied RAR; per-track SHA-256 after lossless archive extraction"
                          },
     "technicalMetadataStatus":  "verified_file_integrity_and_stream_metadata_only",
-    "contentVerificationStatus":  "not_listened_or_transcribed",
-    "verifiedLessonTrackCount":  0
+    "contentVerificationStatus":  "partially_user_listen_verified",
+    "verifiedLessonTrackCount":  9
 }

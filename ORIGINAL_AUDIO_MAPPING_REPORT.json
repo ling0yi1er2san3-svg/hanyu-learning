@@ -1,0 +1,95 @@
+{
+    "generatedAt":  "2026-10-18T09:50:04.3373855Z",
+    "recognizedBySha256":  30,
+    "newlyConfirmed":  11,
+    "mappings":  [
+                     {
+                         "book":  5,
+                         "track":  9,
+                         "lesson":  9,
+                         "result":  "verified",
+                         "src":  "/audio/source/book5/track09.mp3",
+                         "sha256":  "815afc68289af3ff1076d601a4c8c6030f2c7e21f83bd57889e6af5b13726636"
+                     },
+                     {
+                         "book":  5,
+                         "track":  10,
+                         "lesson":  10,
+                         "result":  "verified",
+                         "src":  "/audio/source/book5/track10.mp3",
+                         "sha256":  "f5b02e9a20165574a9eaa42bf57c3847e951bca386dcbbeb5f53ae7af0606051"
+                     },
+                     {
+                         "book":  6,
+                         "track":  1,
+                         "lesson":  14,
+                         "result":  "verified",
+                         "src":  "/audio/source/book6/track01.mp3",
+                         "sha256":  "ac8eee22246111a7cba8de1cca0a768b8387924c9da5ae1802d2895e14f99661"
+                     },
+                     {
+                         "book":  6,
+                         "track":  2,
+                         "lesson":  15,
+                         "result":  "verified",
+                         "src":  "/audio/source/book6/track02.mp3",
+                         "sha256":  "961398763661a13aff6c235cbeb6cb1cd4a17087e1a65cb584300b14183c6dad"
+                     },
+                     {
+                         "book":  6,
+                         "track":  3,
+                         "lesson":  16,
+                         "result":  "verified",
+                         "src":  "/audio/source/book6/track03.mp3",
+                         "sha256":  "8683527b25b4f27dc0f01db427a29f45b2d8144d971e2a72075f8afa0a66d7fe"
+                     },
+                     {
+                         "book":  6,
+                         "track":  4,
+                         "lesson":  17,
+                         "result":  "verified",
+                         "src":  "/audio/source/book6/track04.mp3",
+                         "sha256":  "dba33f735303fb94a7f1f612a59be791582299a9a58d61bbea56ae2ba62fa418"
+                     },
+                     {
+                         "book":  6,
+                         "track":  5,
+                         "lesson":  18,
+                         "result":  "verified",
+                         "src":  "/audio/source/book6/track05.mp3",
+                         "sha256":  "b0bda83004df96f2ce8c224f538ec6e5c1ccee285a198c065eb1dd92bebea26e"
+                     },
+                     {
+                         "book":  6,
+                         "track":  6,
+                         "lesson":  19,
+                         "result":  "verified",
+                         "src":  "/audio/source/book6/track06.mp3",
+                         "sha256":  "21e8550c076822927b624f676b2ad16a520f541f8cf0e7e6a7970413ffe0e785"
+                     },
+                     {
+                         "book":  6,
+                         "track":  7,
+                         "lesson":  20,
+                         "result":  "verified",
+                         "src":  "/audio/source/book6/track07.mp3",
+                         "sha256":  "de40c923e1d43a848cab59a872be496ce427cd76e0b52ad2823cbf61ca34a095"
+                     },
+                     {
+                         "book":  6,
+                         "track":  8,
+                         "lesson":  21,
+                         "result":  "verified",
+                         "src":  "/audio/source/book6/track08.mp3",
+                         "sha256":  "90ab796f8e4c31f2475f14c70748d3f09b63e15e75a673686bcfbc7bbfaf8e89"
+                     },
+                     {
+                         "book":  6,
+                         "track":  9,
+                         "lesson":  22,
+                         "result":  "verified",
+                         "src":  "/audio/source/book6/track09.mp3",
+                         "sha256":  "58621a30ca89bc3de2a21f87c3ca6dc20c4373923a964874938978c99775e001"
+                     }
+                 ]
+}

@@ -1,0 +1,50 @@
+HANYU LEARNING V2 — RELEASE-READY INTEGRATION REPORT
+Date: 2026-10-18
+
+SOURCE
+- Base package: hanyu-learning-v2-hanviet-audio-integrity-runtime.zip
+- Release tooling integrated directly into source.
+
+PROTECTED DATA HASH CHECK
+- Protected files hashed before merge: 72
+- Protected files hashed after merge: 72
+- Changed/added/removed protected files during merge: 0
+- Snapshot manifest: RELEASE_DATA_SHA256.json
+
+VALIDATION BEFORE DEPENDENCY INSTALL
+PASS - validate:data
+  Catalog: 76 = 58 core + 6 partial + 12 missing-source metadata
+  Vocabulary index: 1,942/1,942
+  Search index: 1,942/1,942
+PASS - validate:content
+  Core content lessons: 58/58
+  Text sections: 26; dialogue sections: 74; dialogue lines: 712
+PASS - validate:pinyin
+  Core Pinyin coverage: 738/738
+PASS - validate:translation
+  Vietnamese core coverage: 738/738
+PASS - validate:audio-inventory
+  Q5/Q6: 15 tracks each; verified mappings: 0
+PASS - validate:audio-integrity
+  Technical file/stream metadata valid; spoken-content mapping remains unverified
+PASS - validate:han-viet
+  Verified/composed Hán-Việt: 63/1,942; pending: 1,879 by design
+PASS - project-aware release check
+PASS - vite-plugin-pwa structure/icon check
+
+DATA POLICY
+- public/data-v2 is canonical.
+- public/data is legacy/fallback and is not double-counted.
+- mappingVerified=false is never automatically promoted.
+- Pending Hán-Việt is not treated as an error; only verified/composed entries are asserted.
+
+LOCAL BUILD STATUS IN THIS ENVIRONMENT
+- npm install was attempted but timed out before package-lock.json or node_modules were created.
+- Therefore npm audit, TypeScript/Vite production build, and dist-check are NOT claimed as locally passed.
+- GitHub Actions workflow handles both cases: npm ci when package-lock.json exists, otherwise npm install.
+- Workflow then runs release validation, production audit, repository-aware Vite build, dist-check, and Pages deployment.
+
+GITHUB PAGES
+- Workflow: .github/workflows/deploy.yml
+- Vite base is computed at build time from repository name: /<repo>/
+- Pages permissions include contents:read, actions:read, pages:write, id-token:write.

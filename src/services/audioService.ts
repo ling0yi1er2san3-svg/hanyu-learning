@@ -1,0 +1,1 @@
+export function speakChinese(text:string,rate=1){if(!('speechSynthesis' in window)){alert('Trình duyệt này không hỗ trợ SpeechSynthesis.');return} window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='zh-CN';u.rate=rate;window.speechSynthesis.speak(u)}

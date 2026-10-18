@@ -1,0 +1,56 @@
+[
+  {
+    "id": "book1",
+    "bookNumber": 1,
+    "titleZh": "汉语教程 1",
+    "titleVi": "Giáo trình Hán ngữ 1",
+    "lessonCount": 15,
+    "dataPath": "data/book1/index.json",
+    "catalogStatus": "verified-from-toc"
+  },
+  {
+    "id": "book2",
+    "bookNumber": 2,
+    "titleZh": "汉语教程 2",
+    "titleVi": "Giáo trình Hán ngữ 2",
+    "lessonCount": 15,
+    "dataPath": "data/book2/index.json",
+    "catalogStatus": "verified-from-toc"
+  },
+  {
+    "id": "book3",
+    "bookNumber": 3,
+    "titleZh": "汉语教程 3",
+    "titleVi": "Giáo trình Hán ngữ 3",
+    "lessonCount": 10,
+    "dataPath": "data/book3/index.json",
+    "catalogStatus": "verified-from-toc"
+  },
+  {
+    "id": "book4",
+    "bookNumber": 4,
+    "titleZh": "汉语教程 4",
+    "titleVi": "Giáo trình Hán ngữ 4",
+    "lessonCount": 10,
+    "dataPath": "data/book4/index.json",
+    "catalogStatus": "verified-from-toc"
+  },
+  {
+    "id": "book5",
+    "bookNumber": 5,
+    "titleZh": "汉语教程 5",
+    "titleVi": "Giáo trình Hán ngữ 5",
+    "lessonCount": 13,
+    "dataPath": "data/book5/index.json",
+    "catalogStatus": "verified-from-toc"
+  },
+  {
+    "id": "book6",
+    "bookNumber": 6,
+    "titleZh": "汉语教程 6",
+    "titleVi": "Giáo trình Hán ngữ 6",
+    "lessonCount": 13,
+    "dataPath": "data/book6/index.json",
+    "catalogStatus": "verified-from-toc"
+  }
+]

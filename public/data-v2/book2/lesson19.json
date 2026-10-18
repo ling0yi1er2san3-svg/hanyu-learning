@@ -1,0 +1,585 @@
+{
+  "id": "b2_l19",
+  "book": 2,
+  "lesson": 19,
+  "titleZh": "可以试试吗",
+  "titlePinyin": "Kěyǐ shìshi ma",
+  "titleVi": "Có thể thử được không",
+  "sourceStatus": "core_structured",
+  "contentStatus": "core_verified_q2_vi_complete_q2",
+  "vocabularyExpectedCount": 17,
+  "vocabulary": [
+    {
+      "id": "b2_l19_v001",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "羽绒服",
+      "pinyin": "yǔróngfú",
+      "pinyinPlain": "yurongfu",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "áo lông vũ",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v002",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "又……又……",
+      "pinyin": "yòu…yòu…",
+      "pinyinPlain": "youyou",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "vừa…vừa…",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v003",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "便宜",
+      "pinyin": "piányi",
+      "pinyinPlain": "pianyi",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "rẻ",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v004",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "长",
+      "pinyin": "cháng",
+      "pinyinPlain": "chang",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "dài",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v005",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "一点儿",
+      "pinyin": "yìdiǎnr",
+      "pinyinPlain": "yidianr",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "một chút",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v006",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "短",
+      "pinyin": "duǎn",
+      "pinyinPlain": "duan",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "ngắn",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v007",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "深",
+      "pinyin": "shēn",
+      "pinyinPlain": "shen",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "đậm, sâu",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v008",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "浅",
+      "pinyin": "qiǎn",
+      "pinyinPlain": "qian",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "nhạt, cạn",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v009",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "试",
+      "pinyin": "shì",
+      "pinyinPlain": "shi",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "thử",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v010",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "可以",
+      "pinyin": "kěyǐ",
+      "pinyinPlain": "keyi",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "có thể",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v011",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "当然",
+      "pinyin": "dāngrán",
+      "pinyinPlain": "dangran",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "đương nhiên, tất nhiên",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v012",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "肥",
+      "pinyin": "féi",
+      "pinyinPlain": "fei",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "béo, rộng",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v013",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "瘦",
+      "pinyin": "shòu",
+      "pinyinPlain": "shou",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "gầy, chật, hẹp",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v014",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "合适",
+      "pinyin": "héshì",
+      "pinyinPlain": "heshi",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "vừa vặn, phù hợp",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v015",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "好看",
+      "pinyin": "hǎokàn",
+      "pinyinPlain": "haokan",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "đẹp, xinh, ưa nhìn",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v016",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "种",
+      "pinyin": "zhǒng",
+      "pinyinPlain": "zhong",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "chủng loại, loại",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b2_l19_v017",
+      "book": 2,
+      "lesson": 19,
+      "lessonId": "b2_l19",
+      "hanzi": "打折",
+      "pinyin": "dǎzhé",
+      "pinyinPlain": "dazhe",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "giảm giá, chiết khấu",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "supplementalVocabulary": [],
+  "properNames": [],
+  "texts": [],
+  "dialogues": [
+    {
+      "id": "b2_l19_d01",
+      "title": "可以试试吗",
+      "lines": [
+        {
+          "speaker": "玛丽",
+          "chinese": "我看看羽绒服。",
+          "pinyin": "wǒ kàn kàn yǔróng fú.",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Tôi xem áo lông vũ một chút.",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "售货员",
+          "chinese": "你看看这件，怎么样？又好又便宜。",
+          "pinyin": "nǐ kàn kàn zhè jiàn， zěn me yàng？ yòu hǎo yòu biàn yí.",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Bạn xem chiếc này đi, thế nào? Vừa đẹp vừa rẻ.",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "这件有一点儿长。有短一点儿的吗？",
+          "pinyin": "zhè jiàn yǒu yī diǎnér zhǎng. yǒu duǎnyī diǎnér de ma？",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Chiếc này hơi dài. Có chiếc nào ngắn hơn một chút không?",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "售货员",
+          "chinese": "你要深颜色的还是要浅颜色的？",
+          "pinyin": "nǐ yào shēn yán sè de hái shìyào qiǎn yán sè de？",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Bạn muốn màu đậm hay màu nhạt?",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "浅颜色的。……我试试，可以吗？",
+          "pinyin": "qiǎn yán sè de.……wǒ shì shì， kě yǐ ma？",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Màu nhạt. … Tôi thử nhé, được không?",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "售货员",
+          "chinese": "当然可以。",
+          "pinyin": "dāng rán kě yǐ.",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Tất nhiên là được.",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "这件太肥了，有没有瘦一点儿的？",
+          "pinyin": "zhè jiàn tài féi le， yǒu méi yǒu shòu yī diǎnér de？",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Chiếc này rộng quá, có chiếc nào ôm hơn một chút không?",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "售货员",
+          "chinese": "你再试试这一件。",
+          "pinyin": "nǐ zài shì shì zhè yī jiàn.",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Bạn thử lại chiếc này xem.",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "这件不大不小，正合适，颜色也很好看。",
+          "pinyin": "zhè jiàn bù dà bù xiǎo， zhèng hé shì， yán sè yě hěn hǎo kàn.",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Chiếc này không to không nhỏ, vừa vặn, màu sắc cũng rất đẹp.",
+          "vietnameseStatus": "assistant_translation"
+        }
+      ],
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_d02",
+      "title": "便宜一点儿吧",
+      "lines": [
+        {
+          "speaker": "玛丽",
+          "chinese": "这种羽绒服怎么卖？",
+          "pinyin": "zhè zhǒng yǔróng fú zěn me mài？",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Loại áo lông vũ này bán thế nào?",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "售货员",
+          "chinese": "一件四百块。",
+          "pinyin": "yī jiàn sì bǎikuài.",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Một chiếc 400 tệ.",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "太贵了。便宜一点儿吧，二百怎么样？",
+          "pinyin": "tài guì le. biàn yí yī diǎnér ba， èr bǎizěn me yàng？",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Đắt quá. Rẻ hơn một chút nhé, 200 thì sao?",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "售货员",
+          "chinese": "二百太少了，不卖。可以打八折，你给三百二吧。",
+          "pinyin": "èr bǎitài shǎo le， bù mài. kě yǐ dǎ bā zhé， nǐ gěi sān bǎièr ba.",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "200 thì ít quá, không bán. Có thể giảm 20%, bạn trả 320 đi.",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "三百行不行？",
+          "pinyin": "sān bǎixíng bù xíng？",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "300 được không?",
+          "vietnameseStatus": "assistant_translation"
+        },
+        {
+          "speaker": "售货员",
+          "chinese": "好吧。",
+          "pinyin": "hǎo ba.",
+          "pinyinStatus": "generated_icu_han_latin",
+          "vietnamese": "Được thôi.",
+          "vietnameseStatus": "assistant_translation"
+        }
+      ],
+      "sourceVerified": true
+    }
+  ],
+  "grammar": [
+    {
+      "id": "b2_l19_g01",
+      "pattern": "动词重叠 – Động từ trùng lặp",
+      "explanationVi": "单音节动词常用 AA 或 A一A，双音节动词常用 ABAB，表示动作时间短或试一试。",
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_g02",
+      "pattern": "又……又……",
+      "explanationVi": "连接并列的形容词、动词或短语，表示两种情况同时存在。",
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_g03",
+      "pattern": "一点儿 / 有一点儿",
+      "explanationVi": "一点儿常放在形容词后表示比较；有一点儿常放在形容词前，常带不如意的语气。",
+      "sourceVerified": true
+    }
+  ],
+  "usage": [
+    {
+      "id": "b2_l19_u01",
+      "pattern": "太……了",
+      "explanationVi": "“太 + 形容词 + 了”可表示程度过高，也可表示赞叹。",
+      "sourceVerified": true
+    }
+  ],
+  "phonetics": [
+    {
+      "id": "b2_l19_p01",
+      "pattern": "重叠动词的重音",
+      "explanationVi": "动词重叠时，后一音节常轻读；ABAB 中重音常落在 A 上。",
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_p02",
+      "pattern": "感叹句语调",
+      "explanationVi": "感叹句句末一般用降调。",
+      "sourceVerified": true
+    }
+  ],
+  "exerciseGroups": [
+    {
+      "id": "b2_l19_e01",
+      "title": "语音 – Ngữ âm",
+      "type": "phonetics",
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_e02",
+      "title": "替换 – Bài tập thay thế",
+      "type": "substitution",
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_e03",
+      "title": "读金额 – Đọc số tiền",
+      "type": "numbers",
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_e04",
+      "title": "选词填空 – Chọn từ điền vào chỗ trống",
+      "type": "fill",
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_e05",
+      "title": "情景回答 – Trả lời theo yêu cầu giao tiếp",
+      "type": "speaking",
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_e06",
+      "title": "改错句 – Sửa câu sai",
+      "type": "correction",
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_e07",
+      "title": "成段表达 – Diễn đạt thành đoạn",
+      "type": "speaking",
+      "sourceVerified": true
+    },
+    {
+      "id": "b2_l19_e08",
+      "title": "写汉字 – Viết chữ Hán",
+      "type": "writing",
+      "sourceVerified": true
+    }
+  ],
+  "audio": {
+    "tracks": [],
+    "mappingVerified": false
+  },
+  "verification": {
+    "vocabularyVerified": true,
+    "textsVerified": true,
+    "grammarVerified": true,
+    "exercisesVerified": true,
+    "audioVerified": false,
+    "pinyinCoverageComplete": true,
+    "pinyinSourceVerified": false,
+    "pinyinMethod": "mixed_existing_and_icu_han_latin",
+    "translationCoverageComplete": true,
+    "translationSourceVerified": false,
+    "translationMethod": "assistant_translation",
+    "hanVietVerifiedSubsetApplied": false,
+    "hanVietSource": null
+  },
+  "sourcePages": [
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65
+  ]
+}

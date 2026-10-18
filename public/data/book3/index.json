@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10-phase8a",
+  "bookNumber": 3,
+  "titleVi": "Giáo trình Hán ngữ 3",
+  "catalogVerified": true,
+  "lessons": [
+    {
+      "id": "b3_l01",
+      "book": 3,
+      "lesson": 1,
+      "titleZh": "我比你更喜欢音乐",
+      "titlePinyin": "",
+      "titleVi": "Tôi thích âm nhạc hơn bạn",
+      "sourcePageLabel": 1,
+      "dataPath": "data/book3/lesson01.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b3_l02",
+      "book": 3,
+      "lesson": 2,
+      "titleZh": "我们那儿的冬天跟北京一样冷",
+      "titlePinyin": "",
+      "titleVi": "Mùa đông ở chỗ chúng tôi lạnh như ở Bắc Kinh",
+      "sourcePageLabel": 22,
+      "dataPath": "data/book3/lesson02.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b3_l03",
+      "book": 3,
+      "lesson": 3,
+      "titleZh": "冬天快要到了",
+      "titlePinyin": "",
+      "titleVi": "Mùa đông sắp đến rồi",
+      "sourcePageLabel": 38,
+      "dataPath": "data/book3/lesson03.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b3_l04",
+      "book": 3,
+      "lesson": 4,
+      "titleZh": "快上车吧，要开车了",
+      "titlePinyin": "",
+      "titleVi": "Nhanh lên, xe sắp chạy rồi",
+      "sourcePageLabel": 54,
+      "dataPath": "data/book3/lesson04.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b3_l05",
+      "book": 3,
+      "lesson": 5,
+      "titleZh": "我听过钢琴协奏曲《黄河》",
+      "titlePinyin": "",
+      "titleVi": "Tôi đã nghe bản hòa tấu piano “Hoàng Hà”",
+      "sourcePageLabel": 70,
+      "dataPath": "data/book3/lesson05.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b3_l06",
+      "book": 3,
+      "lesson": 6,
+      "titleZh": "我是跟旅游团一起来的",
+      "titlePinyin": "",
+      "titleVi": "Tôi đến cùng đoàn du lịch",
+      "sourcePageLabel": 88,
+      "dataPath": "data/book3/lesson06.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b3_l07",
+      "book": 3,
+      "lesson": 7,
+      "titleZh": "我的护照你找到了没有",
+      "titlePinyin": "",
+      "titleVi": "Em tìm thấy hộ chiếu của anh chưa",
+      "sourcePageLabel": 105,
+      "dataPath": "data/book3/lesson07.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b3_l08",
+      "book": 3,
+      "lesson": 8,
+      "titleZh": "我的眼镜摔坏了",
+      "titlePinyin": "",
+      "titleVi": "Kính của tôi hỏng rồi",
+      "sourcePageLabel": 119,
+      "dataPath": "data/book3/lesson08.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b3_l09",
+      "book": 3,
+      "lesson": 9,
+      "titleZh": "钥匙忘拔下来了",
+      "titlePinyin": "",
+      "titleVi": "Quên lấy chìa khóa ra rồi",
+      "sourcePageLabel": 133,
+      "dataPath": "data/book3/lesson09.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b3_l10",
+      "book": 3,
+      "lesson": 10,
+      "titleZh": "会议厅的门开着呢",
+      "titlePinyin": "",
+      "titleVi": "Cửa phòng họp vẫn đang mở",
+      "sourcePageLabel": 149,
+      "dataPath": "data/book3/lesson10.json",
+      "contentReady": false,
+      "catalogVerified": true
+    }
+  ]
+}

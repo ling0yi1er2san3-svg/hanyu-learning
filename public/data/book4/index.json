@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10-phase8a",
+  "bookNumber": 4,
+  "titleVi": "Giáo trình Hán ngữ 4",
+  "catalogVerified": true,
+  "lessons": [
+    {
+      "id": "b4_l11",
+      "book": 4,
+      "lesson": 11,
+      "titleZh": "前边开过来一辆空车",
+      "titlePinyin": "",
+      "titleVi": "Phía trước có một cái xe trống đang đi tới",
+      "sourcePageLabel": 1,
+      "dataPath": "data/book4/lesson11.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b4_l12",
+      "book": 4,
+      "lesson": 12,
+      "titleZh": "为什么把“福”字倒贴在门上",
+      "titlePinyin": "",
+      "titleVi": "Tại sao lại dán chữ “Phúc” ngược trên cửa",
+      "sourcePageLabel": 15,
+      "dataPath": "data/book4/lesson12.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b4_l13",
+      "book": 4,
+      "lesson": 13,
+      "titleZh": "请把护照和机票给我",
+      "titlePinyin": "",
+      "titleVi": "Đưa cho tôi hộ chiếu và vé máy bay",
+      "sourcePageLabel": 31,
+      "dataPath": "data/book4/lesson13.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b4_l14",
+      "book": 4,
+      "lesson": 14,
+      "titleZh": "我的腿被自行车撞伤了",
+      "titlePinyin": "",
+      "titleVi": "Chân của tôi bị thương do xe đạp va vào",
+      "sourcePageLabel": 46,
+      "dataPath": "data/book4/lesson14.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b4_l15",
+      "book": 4,
+      "lesson": 15,
+      "titleZh": "京剧我看得懂，但是听不懂",
+      "titlePinyin": "",
+      "titleVi": "Kinh kịch tôi xem hiểu nhưng nghe không hiểu",
+      "sourcePageLabel": 61,
+      "dataPath": "data/book4/lesson15.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b4_l16",
+      "book": 4,
+      "lesson": 16,
+      "titleZh": "山这么高，你爬得上去吗",
+      "titlePinyin": "",
+      "titleVi": "Núi cao thế này, bạn có leo lên được không",
+      "sourcePageLabel": 79,
+      "dataPath": "data/book4/lesson16.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b4_l17",
+      "book": 4,
+      "lesson": 17,
+      "titleZh": "我想起来了",
+      "titlePinyin": "",
+      "titleVi": "Tôi nhớ ra rồi",
+      "sourcePageLabel": 94,
+      "dataPath": "data/book4/lesson17.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b4_l18",
+      "book": 4,
+      "lesson": 18,
+      "titleZh": "寒假你打算去哪儿旅行",
+      "titlePinyin": "",
+      "titleVi": "Kỳ nghỉ đông bạn dự định đi đâu du lịch",
+      "sourcePageLabel": 110,
+      "dataPath": "data/book4/lesson18.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b4_l19",
+      "book": 4,
+      "lesson": 19,
+      "titleZh": "有困难找警察",
+      "titlePinyin": "",
+      "titleVi": "Có khó khăn tìm cảnh sát",
+      "sourcePageLabel": 124,
+      "dataPath": "data/book4/lesson19.json",
+      "contentReady": false,
+      "catalogVerified": true
+    },
+    {
+      "id": "b4_l20",
+      "book": 4,
+      "lesson": 20,
+      "titleZh": "吉祥的数字",
+      "titlePinyin": "",
+      "titleVi": "Những con số may mắn",
+      "sourcePageLabel": 138,
+      "dataPath": "data/book4/lesson20.json",
+      "contentReady": false,
+      "catalogVerified": true
+    }
+  ]
+}

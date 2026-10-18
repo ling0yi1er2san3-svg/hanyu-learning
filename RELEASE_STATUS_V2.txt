@@ -1,0 +1,27 @@
+HANYU LEARNING V2 - CURRENT RELEASE STATUS
+
+DATA VALIDATION
+- Catalog: 76 lessons
+- Core lessons: 58
+- Partial-source lessons: 6
+- Missing-source lessons: 12
+- Core vocabulary: 1,942 / 1,942
+- Search vocabulary index: 1,942 / 1,942
+- Duplicate vocabulary IDs: 0
+- Book counts: Q1 211; Q2 217; Q3 269; Q4 320; Q5 390; Q6 535
+- npm run validate:data: PASS
+- npm run validate:q1 ... validate:q6: PASS
+
+SOURCE/COVERAGE NOTES
+- Q5 source verification corrected the previous provisional target 1,945 to 1,942 main vocabulary entries.
+- Q6 B14-B22 has 535 source-verified main vocabulary entries.
+- Q6 Vietnamese meanings are generated translations from the English source glosses.
+- Han-Viet remains pending where not source verified.
+- Exact original-audio mapping remains pending; no unverified audio is attached to lesson items.
+- Full line-by-line text/dialogue transcription is not yet complete for all 58 core lessons; textsVerified remains false where appropriate.
+
+BUILD STATUS IN THIS CHAT ENVIRONMENT
+- npm dependency installation was attempted twice but timed out in the execution environment.
+- Therefore npm audit and npm run build:release could not be completed here.
+- Global TypeScript alone cannot compile the React/Vite app without the project dependencies, so a successful production build is NOT claimed in this package.
+- On the user's Windows machine, run npm install, npm audit, then npm run build:release.

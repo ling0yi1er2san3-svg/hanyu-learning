@@ -1,0 +1,532 @@
+{
+  "id": "b1_l07",
+  "book": 1,
+  "lesson": 7,
+  "titleZh": "你吃什么",
+  "titlePinyin": "Nǐ chī shénme",
+  "titleVi": "Bạn ăn gì",
+  "sourceStatus": "core_structured",
+  "contentStatus": "core_verified_q1",
+  "vocabularyExpectedCount": 16,
+  "vocabulary": [
+    {
+      "id": "b1_l07_v001",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "中午",
+      "pinyin": "zhōngwǔ",
+      "pinyinPlain": "zhongwu",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "buổi trưa",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v002",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "吃",
+      "pinyin": "chī",
+      "pinyinPlain": "chi",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "ăn",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v003",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "饭",
+      "pinyin": "fàn",
+      "pinyinPlain": "fan",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "cơm, bữa ăn",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v004",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "食堂",
+      "pinyin": "shítáng",
+      "pinyinPlain": "shitang",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "nhà ăn",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v005",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "馒头",
+      "pinyin": "mántou",
+      "pinyinPlain": "mantou",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "bánh bao chay",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v006",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "米饭",
+      "pinyin": "mǐfàn",
+      "pinyinPlain": "mifan",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "cơm",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v007",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "要",
+      "pinyin": "yào",
+      "pinyinPlain": "yao",
+      "hanViet": "Yếu",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "muốn, cần",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l07_v008",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "个",
+      "pinyin": "gè",
+      "pinyinPlain": "ge",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "cái (lượng từ)",
+      "meaningViStatus": "source",
+      "partOfSpeech": "classifier",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v009",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "碗",
+      "pinyin": "wǎn",
+      "pinyinPlain": "wan",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "bát, cái bát",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v010",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "鸡蛋",
+      "pinyin": "jīdàn",
+      "pinyinPlain": "jidan",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "trứng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v011",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "汤",
+      "pinyin": "tāng",
+      "pinyinPlain": "tang",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "canh",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v012",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "啤酒",
+      "pinyin": "píjiǔ",
+      "pinyinPlain": "pijiu",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "bia",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v013",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "这些",
+      "pinyin": "zhèxiē",
+      "pinyinPlain": "zhexie",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "những...này",
+      "meaningViStatus": "source",
+      "partOfSpeech": "pronoun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v014",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "饺子",
+      "pinyin": "jiǎozi",
+      "pinyinPlain": "jiaozi",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "há cảo, bánh chẻo",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v015",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "包子",
+      "pinyin": "bāozi",
+      "pinyinPlain": "baozi",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "bánh bao",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l07_v016",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "面条",
+      "pinyin": "miàntiáo",
+      "pinyinPlain": "miantiao",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "mì sợi",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "supplementalVocabulary": [],
+  "properNames": [
+    {
+      "id": "b1_l07_p001",
+      "book": 1,
+      "lesson": 7,
+      "lessonId": "b1_l07",
+      "hanzi": "玛丽",
+      "pinyin": "Mǎlì",
+      "pinyinPlain": "mali",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "Mary",
+      "meaningViStatus": "source",
+      "partOfSpeech": "proper_name",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "texts": [],
+  "dialogues": [
+    {
+      "id": "b1_l07_d01",
+      "title": "在教室",
+      "lines": [
+        {
+          "speaker": "麦克",
+          "chinese": "中午你去哪儿吃饭？",
+          "pinyin": "Zhōngwǔ nǐ qù nǎr chī fàn?",
+          "vietnamese": "Buổi trưa bạn đi đâu ăn cơm?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "我去食堂。",
+          "pinyin": "Wǒ qù shítáng.",
+          "vietnamese": "Tôi đi nhà ăn.",
+          "pinyinStatus": "existing_curated"
+        }
+      ],
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l07_d02",
+      "title": "在食堂",
+      "lines": [
+        {
+          "speaker": "麦克",
+          "chinese": "你吃什么？",
+          "pinyin": "Nǐ chī shénme?",
+          "vietnamese": "Bạn ăn gì?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "我吃馒头。",
+          "pinyin": "Wǒ chī mántou.",
+          "vietnamese": "Tôi ăn màn thầu.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "麦克",
+          "chinese": "你要几个？",
+          "pinyin": "Nǐ yào jǐ ge?",
+          "vietnamese": "Bạn muốn mấy cái?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "一个。你吃吗？",
+          "pinyin": "Yí ge. Nǐ chī ma?",
+          "vietnamese": "Một cái. Bạn ăn không?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "麦克",
+          "chinese": "不吃，我吃米饭。你喝什么？",
+          "pinyin": "Bù chī, wǒ chī mǐfàn. Nǐ hē shénme?",
+          "vietnamese": "Không ăn, tôi ăn cơm. Bạn uống gì?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "我要一碗鸡蛋汤。你喝吗？",
+          "pinyin": "Wǒ yào yì wǎn jīdàn tāng. Nǐ hē ma?",
+          "vietnamese": "Tôi muốn một bát canh trứng. Bạn uống không?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "麦克",
+          "chinese": "不喝，我喝啤酒。",
+          "pinyin": "Bù hē, wǒ hē píjiǔ.",
+          "vietnamese": "Không uống, tôi uống bia.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "玛丽",
+          "chinese": "这些是什么？",
+          "pinyin": "Zhèxiē shì shénme?",
+          "vietnamese": "Những cái này là gì?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "麦克",
+          "chinese": "这是饺子，这是包子，那是面条。",
+          "pinyin": "Zhè shì jiǎozi, zhè shì bāozi, nà shì miàntiáo.",
+          "vietnamese": "Đây là bánh chẻo, đây là bánh bao, kia là mì sợi.",
+          "pinyinStatus": "existing_curated"
+        }
+      ],
+      "sourceVerified": true
+    }
+  ],
+  "grammar": [],
+  "usage": [
+    {
+      "id": "b1_l07_u01",
+      "pattern": "“一”的变调 – Biến điệu của 一",
+      "explanationVi": "一 cơ bản là thanh 1; khi dùng trong chuỗi số giữ thanh 1, còn trước các thanh khác có thể biến điệu theo quy tắc.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l07_u02",
+      "pattern": "“不”的变调 – Biến điệu của 不",
+      "explanationVi": "不 trước âm tiết thanh 4 thường đọc thành thanh 2.",
+      "sourceVerified": true
+    }
+  ],
+  "phonetics": [],
+  "exerciseGroups": [
+    {
+      "id": "b1_l07_e01",
+      "title": "拼音辨调 – Phân biệt âm, thanh điệu",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l07_e02",
+      "title": "多音节连读 – Đọc liền nhiều âm tiết",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l07_e03",
+      "title": "“一”的变调 – Biến điệu của 一",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l07_e04",
+      "title": "“不”的变调 – Biến điệu của 不",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l07_e05",
+      "title": "轻声 – Thanh nhẹ",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l07_e06",
+      "title": "声调搭配 – Phối hợp thanh điệu",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l07_e07",
+      "title": "认读 – Nhận mặt chữ Hán và đọc",
+      "sourceVerified": true,
+      "type": "reading"
+    },
+    {
+      "id": "b1_l07_e08",
+      "title": "回答问题 – Trả lời câu hỏi",
+      "sourceVerified": true,
+      "type": "qa"
+    },
+    {
+      "id": "b1_l07_e09",
+      "title": "完成会话 – Hoàn thành hội thoại",
+      "sourceVerified": true,
+      "type": "dialogue"
+    },
+    {
+      "id": "b1_l07_e10",
+      "title": "看图问答 – Nhìn tranh hỏi đáp",
+      "sourceVerified": true,
+      "type": "picture"
+    },
+    {
+      "id": "b1_l07_e11",
+      "title": "成段表达 – Diễn đạt thành đoạn",
+      "sourceVerified": true,
+      "type": "speaking"
+    },
+    {
+      "id": "b1_l07_e12",
+      "title": "写汉字 – Tập viết chữ Hán",
+      "sourceVerified": true,
+      "type": "writing"
+    }
+  ],
+  "audio": {
+    "tracks": [],
+    "mappingVerified": false
+  },
+  "verification": {
+    "vocabularyVerified": true,
+    "textsVerified": true,
+    "grammarVerified": true,
+    "exercisesVerified": true,
+    "audioVerified": false,
+    "pinyinCoverageComplete": true,
+    "pinyinSourceVerified": false,
+    "pinyinMethod": "mixed_existing_and_icu_han_latin",
+    "hanVietVerifiedSubsetApplied": true,
+    "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+  },
+  "sourcePages": [
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "id": "b1_l01",
+  "book": 1,
+  "lesson": 1,
+  "titleZh": "你好",
+  "titlePinyin": "Nǐ hǎo",
+  "titleVi": "Xin chào",
+  "sourceStatus": "core_structured",
+  "contentStatus": "core_verified_q1",
+  "vocabularyExpectedCount": 11,
+  "vocabulary": [
+    {
+      "id": "b1_l01_v001",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "pinyinPlain": "ni",
+      "hanViet": "Nễ",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "anh, chị, bạn, ông, bà...",
+      "meaningViStatus": "source",
+      "partOfSpeech": "pronoun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l01_v002",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "好",
+      "pinyin": "hǎo",
+      "pinyinPlain": "hao",
+      "hanViet": "Hảo",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "tốt, đẹp, hay, ngon...",
+      "meaningViStatus": "source",
+      "partOfSpeech": "adjective",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l01_v003",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "一",
+      "pinyin": "yī",
+      "pinyinPlain": "yi",
+      "hanViet": "Nhất",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "một",
+      "meaningViStatus": "source",
+      "partOfSpeech": "numeral",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l01_v004",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "pinyinPlain": "wu",
+      "hanViet": "Ngũ",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "năm",
+      "meaningViStatus": "source",
+      "partOfSpeech": "numeral",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l01_v005",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "八",
+      "pinyin": "bā",
+      "pinyinPlain": "ba",
+      "hanViet": "Bát",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "tám",
+      "meaningViStatus": "source",
+      "partOfSpeech": "numeral",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l01_v006",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "大",
+      "pinyin": "dà",
+      "pinyinPlain": "da",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "to, lớn",
+      "meaningViStatus": "source",
+      "partOfSpeech": "adjective",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l01_v007",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "不",
+      "pinyin": "bù",
+      "pinyinPlain": "bu",
+      "hanViet": "Bất",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "không, chẳng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "adverb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l01_v008",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "口",
+      "pinyin": "kǒu",
+      "pinyinPlain": "kou",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "miệng; nhân khẩu",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun/classifier",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l01_v009",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "白",
+      "pinyin": "bái",
+      "pinyinPlain": "bai",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "trắng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "adjective",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l01_v010",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "女",
+      "pinyin": "nǚ",
+      "pinyinPlain": "nv",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "nữ, phụ nữ",
+      "meaningViStatus": "source",
+      "partOfSpeech": "adjective/noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l01_v011",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "马",
+      "pinyin": "mǎ",
+      "pinyinPlain": "ma",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "con ngựa",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "supplementalVocabulary": [
+    {
+      "id": "b1_l01_s001",
+      "book": 1,
+      "lesson": 1,
+      "lessonId": "b1_l01",
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "pinyinPlain": "nihao",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "xin chào",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "properNames": [],
+  "texts": [],
+  "dialogues": [
+    {
+      "id": "b1_l01_d01",
+      "title": "你好",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你好！",
+          "pinyin": "Nǐ hǎo!",
+          "vietnamese": "Xin chào!",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "B",
+          "chinese": "你好！",
+          "pinyin": "Nǐ hǎo!",
+          "vietnamese": "Xin chào!",
+          "pinyinStatus": "existing_curated"
+        }
+      ],
+      "sourceVerified": true
+    }
+  ],
+  "grammar": [],
+  "usage": [],
+  "phonetics": [
+    {
+      "id": "b1_l01_ph01",
+      "pattern": "Thanh mẫu b p m f d t n l g k h",
+      "explanationVi": "Giới thiệu các thanh mẫu b, p, m, f, d, t, n, l, g, k, h.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l01_ph02",
+      "pattern": "Vận mẫu a o e i u ü ai ei ao ou",
+      "explanationVi": "Giới thiệu các vận mẫu cơ bản a, o, e, i, u, ü, ai, ei, ao, ou.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l01_ph03",
+      "pattern": "Bốn thanh điệu",
+      "explanationVi": "Tiếng Hán phổ thông có bốn thanh điệu cơ bản.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l01_ph04",
+      "pattern": "Biến điệu thanh 3",
+      "explanationVi": "Khi hai âm tiết thanh 3 đứng liền nhau, âm tiết thứ nhất đọc gần như thanh 2.",
+      "sourceVerified": true
+    }
+  ],
+  "exerciseGroups": [
+    {
+      "id": "b1_l01_e01",
+      "title": "声调 – Thanh điệu",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l01_e02",
+      "title": "变调 – Biến điệu",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l01_e03",
+      "title": "拼音练习 – Bài tập phát âm",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l01_e04",
+      "title": "认读 – Nhận mặt chữ Hán và đọc",
+      "sourceVerified": true,
+      "type": "reading"
+    },
+    {
+      "id": "b1_l01_e05",
+      "title": "写汉字 – Tập viết chữ Hán",
+      "sourceVerified": true,
+      "type": "writing"
+    }
+  ],
+  "audio": {
+    "tracks": [],
+    "mappingVerified": false
+  },
+  "verification": {
+    "vocabularyVerified": true,
+    "textsVerified": true,
+    "grammarVerified": true,
+    "exercisesVerified": true,
+    "audioVerified": false,
+    "pinyinCoverageComplete": true,
+    "pinyinSourceVerified": false,
+    "pinyinMethod": "mixed_existing_and_icu_han_latin",
+    "hanVietVerifiedSubsetApplied": true,
+    "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+  },
+  "sourcePages": [
+    19,
+    20,
+    21,
+    26,
+    27,
+    28,
+    29,
+    30
+  ]
+}

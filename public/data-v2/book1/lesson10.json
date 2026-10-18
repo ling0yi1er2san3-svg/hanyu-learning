@@ -1,0 +1,635 @@
+{
+  "id": "b1_l10",
+  "book": 1,
+  "lesson": 10,
+  "titleZh": "他住哪儿",
+  "titlePinyin": "Tā zhù nǎr",
+  "titleVi": "Ông ấy sống ở đâu",
+  "sourceStatus": "core_structured",
+  "contentStatus": "core_verified_q1",
+  "vocabularyExpectedCount": 16,
+  "vocabulary": [
+    {
+      "id": "b1_l10_v001",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "办公室",
+      "pinyin": "bàngōngshì",
+      "pinyinPlain": "bangongshi",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "văn phòng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v002",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "职员",
+      "pinyin": "zhíyuán",
+      "pinyinPlain": "zhiyuan",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "nhân viên, viên chức",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v003",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "找",
+      "pinyin": "zhǎo",
+      "pinyinPlain": "zhao",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "tìm, kiếm",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v004",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "在",
+      "pinyin": "zài",
+      "pinyinPlain": "zai",
+      "hanViet": "Tại",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "ở, có mặt ở",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb/preposition",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l10_v005",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "家",
+      "pinyin": "jiā",
+      "pinyinPlain": "jia",
+      "hanViet": "Gia",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "nhà, gia đình",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l10_v006",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "呢",
+      "pinyin": "ne",
+      "pinyinPlain": "ne",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "trợ từ ngữ khí",
+      "meaningViStatus": "source",
+      "partOfSpeech": "particle",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v007",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "住",
+      "pinyin": "zhù",
+      "pinyinPlain": "zhu",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "ở, cư trú",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v008",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "楼",
+      "pinyin": "lóu",
+      "pinyinPlain": "lou",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "tầng, nhà lầu",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v009",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "门",
+      "pinyin": "mén",
+      "pinyinPlain": "men",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "cửa, cổng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v010",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "房间",
+      "pinyin": "fángjiān",
+      "pinyinPlain": "fangjian",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "phòng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v011",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "号",
+      "pinyin": "hào",
+      "pinyinPlain": "hao",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "số",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v012",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "知道",
+      "pinyin": "zhīdào",
+      "pinyinPlain": "zhidao",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "biết",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v013",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "电话",
+      "pinyin": "diànhuà",
+      "pinyinPlain": "dianhua",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "điện thoại",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v014",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "号码",
+      "pinyin": "hàomǎ",
+      "pinyinPlain": "haoma",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "số, mã số",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_v015",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "零（〇）",
+      "pinyin": "líng",
+      "pinyinPlain": "ling",
+      "hanViet": "Linh",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "số không, lẻ",
+      "meaningViStatus": "source",
+      "partOfSpeech": "numeral",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l10_v016",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "手机",
+      "pinyin": "shǒujī",
+      "pinyinPlain": "shouji",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "điện thoại di động",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "supplementalVocabulary": [
+    {
+      "id": "b1_l10_s001",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "办公",
+      "pinyin": "bàngōng",
+      "pinyinPlain": "bangong",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "làm việc (tại cơ quan)",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_s002",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "电",
+      "pinyin": "diàn",
+      "pinyinPlain": "dian",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "điện",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_s003",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "话",
+      "pinyin": "huà",
+      "pinyinPlain": "hua",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "lời nói",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l10_s004",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "手",
+      "pinyin": "shǒu",
+      "pinyinPlain": "shou",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "tay",
+      "meaningViStatus": "source",
+      "partOfSpeech": null,
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "properNames": [
+    {
+      "id": "b1_l10_p001",
+      "book": 1,
+      "lesson": 10,
+      "lessonId": "b1_l10",
+      "hanzi": "李昌浩",
+      "pinyin": "Lǐ Chānghào",
+      "pinyinPlain": "lichanghao",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "Lý Xương Hạo",
+      "meaningViStatus": "source",
+      "partOfSpeech": "proper_name",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "texts": [],
+  "dialogues": [
+    {
+      "id": "b1_l10_d01",
+      "title": "他住哪儿",
+      "lines": [
+        {
+          "speaker": "李昌浩",
+          "chinese": "请问，这是办公室吗？",
+          "pinyin": "Qǐngwèn, zhè shì bàngōngshì ma?",
+          "vietnamese": "Xin hỏi, đây là văn phòng phải không?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "职员",
+          "chinese": "是。你找谁？",
+          "pinyin": "Shì. Nǐ zhǎo shéi?",
+          "vietnamese": "Phải. Bạn tìm ai?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "李昌浩",
+          "chinese": "王老师在哪儿？我是他的学生。",
+          "pinyin": "Wáng lǎoshī zài nǎr? Wǒ shì tā de xuésheng.",
+          "vietnamese": "Thầy Vương ở đâu? Tôi là học sinh của thầy.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "职员",
+          "chinese": "他不在。他在家呢。",
+          "pinyin": "Tā bú zài. Tā zài jiā ne.",
+          "vietnamese": "Ông ấy không có ở đây. Ông ấy ở nhà.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "李昌浩",
+          "chinese": "他住哪儿？",
+          "pinyin": "Tā zhù nǎr?",
+          "vietnamese": "Ông ấy ở đâu?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "职员",
+          "chinese": "他住十八楼一门，房间号是601。",
+          "pinyin": "Tā zhù shíbā lóu yī mén, fángjiān hào shì liù líng yī.",
+          "vietnamese": "Ông ấy ở tầng 18, cửa số 1, số phòng 601.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "李昌浩",
+          "chinese": "您知道他的电话号码吗？",
+          "pinyin": "Nín zhīdào tā de diànhuà hàomǎ ma?",
+          "vietnamese": "Ngài biết số điện thoại của ông ấy không?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "职员",
+          "chinese": "知道，62931074。",
+          "pinyin": "Zhīdào, liù èr jiǔ sān yī líng qī sì.",
+          "vietnamese": "Biết, 62931074.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "李昌浩",
+          "chinese": "他的手机号码是多少？",
+          "pinyin": "Tā de shǒujī hàomǎ shì duōshao?",
+          "vietnamese": "Số điện thoại di động của ông ấy là bao nhiêu?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "职员",
+          "chinese": "不知道。",
+          "pinyin": "Bù zhīdào.",
+          "vietnamese": "Không biết.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "李昌浩",
+          "chinese": "谢谢您。",
+          "pinyin": "Xièxie nín.",
+          "vietnamese": "Cảm ơn ngài.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "职员",
+          "chinese": "不客气。",
+          "pinyin": "Bú kèqi.",
+          "vietnamese": "Không có gì.",
+          "pinyinStatus": "existing_curated"
+        }
+      ],
+      "sourceVerified": true
+    }
+  ],
+  "grammar": [
+    {
+      "id": "b1_l10_g01",
+      "pattern": "汉语句子的语序",
+      "explanationVi": "Trật tự câu tiếng Hán nhìn chung là chủ ngữ + vị ngữ; tân ngữ thường theo sau động từ, định ngữ đứng trước trung tâm ngữ và trạng ngữ đứng trước động từ/tính từ.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l10_g02",
+      "pattern": "动词谓语句",
+      "explanationVi": "Câu vị ngữ động từ là câu có động từ làm thành phần chính của vị ngữ.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l10_g03",
+      "pattern": "号码的读法",
+      "explanationVi": "Khi đọc số điện thoại, số nhà, số hộ chiếu..., từng chữ số thường được đọc tách rời; “一” thường đọc yāo trong dãy số.",
+      "sourceVerified": true
+    }
+  ],
+  "usage": [
+    {
+      "id": "b1_l10_u01",
+      "pattern": "请问……？",
+      "explanationVi": "Khi hỏi người lạ hoặc hỏi lịch sự, thường mở đầu bằng 请问.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l10_u02",
+      "pattern": "他在家呢",
+      "explanationVi": "呢 ở cuối câu trần thuật có thể biểu thị sắc thái xác nhận hoặc tình trạng đang tiếp diễn.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l10_u03",
+      "pattern": "您",
+      "explanationVi": "Đại từ nhân xưng kính ngữ dùng để xưng hô lịch sự.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l10_u04",
+      "pattern": "“〇”",
+      "explanationVi": "Số 0 trong tiếng Hán đọc líng và có thể viết là 零 hoặc 〇.",
+      "sourceVerified": true
+    }
+  ],
+  "phonetics": [],
+  "exerciseGroups": [
+    {
+      "id": "b1_l10_e01",
+      "title": "拼音辨调 – Phân biệt âm, thanh điệu",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l10_e02",
+      "title": "儿化韵 – Vần cuốn lưỡi",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l10_e03",
+      "title": "“一”的变调 – Biến điệu của 一",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l10_e04",
+      "title": "轻声 – Thanh nhẹ",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l10_e05",
+      "title": "三声变调 – Biến điệu thanh 3",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l10_e06",
+      "title": "多音节连读 – Đọc liền nhiều âm tiết",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l10_e07",
+      "title": "声调搭配 – Phối hợp thanh điệu",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l10_e08",
+      "title": "认读 – Nhận mặt chữ Hán và đọc",
+      "sourceVerified": true,
+      "type": "reading"
+    },
+    {
+      "id": "b1_l10_e09",
+      "title": "回答问题 – Trả lời câu hỏi",
+      "sourceVerified": true,
+      "type": "qa"
+    },
+    {
+      "id": "b1_l10_e10",
+      "title": "成段表达 – Diễn đạt thành đoạn",
+      "sourceVerified": true,
+      "type": "speaking"
+    },
+    {
+      "id": "b1_l10_e11",
+      "title": "写汉字 – Tập viết chữ Hán",
+      "sourceVerified": true,
+      "type": "writing"
+    }
+  ],
+  "audio": {
+    "tracks": [],
+    "mappingVerified": false
+  },
+  "verification": {
+    "vocabularyVerified": true,
+    "textsVerified": true,
+    "grammarVerified": true,
+    "exercisesVerified": true,
+    "audioVerified": false,
+    "pinyinCoverageComplete": true,
+    "pinyinSourceVerified": false,
+    "pinyinMethod": "mixed_existing_and_icu_han_latin",
+    "hanVietVerifiedSubsetApplied": true,
+    "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+  },
+  "sourcePages": [
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103
+  ]
+}

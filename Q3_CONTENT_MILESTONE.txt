@@ -1,0 +1,11 @@
+Q3 detailed source-text milestone
+================================
+Book 3 lessons 1-8 now contain the full source Chinese dialogue lines transcribed from the supplied textbook pages.
+- 8 lessons
+- 17 dialogue sections
+- 214 Chinese dialogue lines
+- source dialogue transcription: complete for Q3 core lessons
+- pinyin per dialogue line: pending
+- Vietnamese line translation: pending
+- audio exact mapping: pending
+The vocabulary/global data validation remains 1,942/1,942 and DATA STATUS: OK.

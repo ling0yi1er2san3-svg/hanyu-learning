@@ -1,0 +1,257 @@
+import { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import AudioButton from '../../components/AudioPlayer/AudioButton'
+import DisplayControls from '../../components/DisplayControls/DisplayControls'
+import { findCatalogLessonV2, loadLessonV2 } from '../../services/dataV2Service'
+import { markLessonCompleted, markLessonOpened } from '../../services/progressService'
+import type { CatalogLessonV2, LessonV2 } from '../../types/dataV2'
+
+type TabKey = 'text' | 'vocabulary' | 'grammar' | 'phonetics' | 'exercise'
+
+const tabs: { key: TabKey; label: string }[] = [
+  { key: 'text', label: 'Bài khóa' },
+  { key: 'vocabulary', label: 'Từ vựng' },
+  { key: 'grammar', label: 'Ngữ pháp / 用法' },
+  { key: 'phonetics', label: 'Ngữ âm' },
+  { key: 'exercise', label: 'Bài tập' },
+]
+
+function SourceNotice({ item }: { item: CatalogLessonV2 }) {
+  const message =
+    item.sourceStatus === 'partial_source'
+      ? 'Nguồn giáo trình hiện tại kết thúc khi bài này chưa đầy đủ. Bài chưa được mở ở chế độ học chính thức.'
+      : 'Chưa có nguồn đầy đủ cho bài này trong bộ tài liệu hiện tại.'
+
+  return (
+    <div className="page">
+      <div className="lesson-topbar">
+        <Link className="back-link" to={`/book/${item.book}`}>← Quyển {item.book}</Link>
+        <span>Bài {item.lesson}</span>
+      </div>
+      <header className="lesson-hero">
+        <div>
+          <p className="eyebrow">Bài {item.lesson}</p>
+          <h1 className="lesson-main-title">{item.titleZh}</h1>
+        </div>
+      </header>
+      <div className="source-notice pending">
+        <strong>{item.sourceStatus === 'partial_source' ? 'Nguồn chưa đầy đủ' : 'Chưa có nguồn'}</strong>
+        <p>{message}</p>
+        <p>V2 không dùng lesson demo hoặc placeholder để thay thế.</p>
+      </div>
+    </div>
+  )
+}
+
+export default function LessonPage() {
+  const params = useParams()
+  const bookNumber = Number(params.bookNumber)
+  const lessonNumber = Number(params.lessonNumber)
+
+  const [catalogItem, setCatalogItem] = useState<CatalogLessonV2 | null>(null)
+  const [lesson, setLesson] = useState<LessonV2 | null>(null)
+  const [activeTab, setActiveTab] = useState<TabKey>('text')
+  const [showPinyin, setShowPinyin] = useState(true)
+  const [showVietnamese, setShowVietnamese] = useState(true)
+  const [loaded, setLoaded] = useState(false)
+
+  useEffect(() => {
+    setLoaded(false)
+    setCatalogItem(null)
+    setLesson(null)
+
+    findCatalogLessonV2(bookNumber, lessonNumber).then(async (item) => {
+      setCatalogItem(item)
+      if (item?.sourceStatus === 'core_structured') {
+        const data = await loadLessonV2(bookNumber, lessonNumber)
+        if (data) {
+          setLesson(data)
+          await markLessonOpened(bookNumber, lessonNumber)
+        }
+      }
+      setLoaded(true)
+    })
+  }, [bookNumber, lessonNumber])
+
+  if (!loaded) {
+    return <div className="page"><div className="loading-box">Đang tải bài học...</div></div>
+  }
+
+  if (!catalogItem) {
+    return <div className="page"><div className="error-box">Không tìm thấy bài trong catalog V2.</div></div>
+  }
+
+  if (catalogItem.sourceStatus !== 'core_structured') {
+    return <SourceNotice item={catalogItem} />
+  }
+
+  if (!lesson) {
+    return (
+      <div className="page">
+        <div className="lesson-topbar">
+          <Link className="back-link" to={`/book/${bookNumber}`}>← Quyển {bookNumber}</Link>
+          <span>Bài {lessonNumber}</span>
+        </div>
+        <header className="lesson-hero">
+          <div>
+            <p className="eyebrow">Bài {lessonNumber}</p>
+            <h1 className="lesson-main-title">{catalogItem.titleZh}</h1>
+          </div>
+        </header>
+        <div className="source-notice pending">
+          <strong>Catalog xác nhận đây là bài core, nhưng lesson JSON vật lý chưa được sinh.</strong>
+          <p>App không fallback sang demo. File chỉ được mở sau khi vocabulary/text/grammar/exercises thật vượt validation.</p>
+        </div>
+      </div>
+    )
+  }
+
+  const grammarItems = [...(lesson.grammar ?? []), ...(lesson.usage ?? [])]
+
+  return (
+    <div className="page lesson-page">
+      <div className="lesson-topbar">
+        <Link className="back-link" to={`/book/${bookNumber}`}>← Quyển {bookNumber}</Link>
+        <span>Bài {lesson.lesson}</span>
+      </div>
+
+      <header className="lesson-hero">
+        <div>
+          <p className="eyebrow">Bài {lesson.lesson}</p>
+          <h1 className="lesson-main-title">{lesson.titleZh}</h1>
+          {lesson.titlePinyin && <div className="lesson-main-pinyin">{lesson.titlePinyin}</div>}
+          {lesson.titleVi && <div className="lesson-main-vi">{lesson.titleVi}</div>}
+        </div>
+        <AudioButton text={lesson.titleZh} label="TTS tiêu đề" />
+      </header>
+
+      <div className="lesson-tabs">
+        {tabs.map((tab) => (
+          <button
+            key={tab.key}
+            className={activeTab === tab.key ? 'lesson-tab active' : 'lesson-tab'}
+            onClick={() => setActiveTab(tab.key)}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+
+      {activeTab === 'text' && (
+        <section className="lesson-section">
+          <DisplayControls
+            showPinyin={showPinyin}
+            showVietnamese={showVietnamese}
+            onTogglePinyin={() => setShowPinyin((value) => !value)}
+            onToggleVietnamese={() => setShowVietnamese((value) => !value)}
+          />
+
+          {(lesson.dialogues ?? []).map((dialogue) => (
+            <article className="text-block" key={dialogue.id}>
+              <h2>{dialogue.title || 'Hội thoại'}</h2>
+              <div className="sentence-stack">
+                {dialogue.lines.map((line, index) => (
+                  <div className="sentence-card" key={`${dialogue.id}-${index}`}>
+                    <div className="sentence-zh">{line.speaker && <strong>{line.speaker}: </strong>}{line.chinese}</div>
+                    {showPinyin && line.pinyin && <div className="sentence-pinyin">{line.pinyin}</div>}
+                    {showVietnamese && line.vietnamese && <div className="sentence-vi">{line.vietnamese}</div>}
+                  </div>
+                ))}
+              </div>
+            </article>
+          ))}
+
+          {(lesson.texts ?? []).map((text) => (
+            <article className="text-block" key={text.id}>
+              {text.title && <h2>{text.title}</h2>}
+              {text.chinese && <div className="v2-long-text">{text.chinese}</div>}
+              {showVietnamese && text.vietnamese && <div className="sentence-vi">{text.vietnamese}</div>}
+              {(text.sentences ?? []).map((line, index) => (
+                <div className="sentence-card" key={`${text.id}-${index}`}>
+                  <div className="sentence-zh">{line.chinese}</div>
+                  {showPinyin && line.pinyin && <div className="sentence-pinyin">{line.pinyin}</div>}
+                  {showVietnamese && line.vietnamese && <div className="sentence-vi">{line.vietnamese}</div>}
+                </div>
+              ))}
+            </article>
+          ))}
+
+          {(lesson.dialogues?.length ?? 0) === 0 && (lesson.texts?.length ?? 0) === 0 && (
+            <div className="empty-state">Bài khóa chưa có dữ liệu vật lý trong lesson JSON này.</div>
+          )}
+        </section>
+      )}
+
+      {activeTab === 'vocabulary' && (
+        <section className="lesson-section">
+          <div className="vocab-grid">
+            {lesson.vocabulary.map((word) => (
+              <article className="vocab-card" key={word.id}>
+                <div className="vocab-hanzi">{word.hanzi}</div>
+                <div className="vocab-pinyin">{word.pinyin}</div>
+                <div className="vocab-meaning">{word.meaningVi}</div>
+                {word.hanVietStatus === 'verified' && word.hanViet && <div>Hán Việt: {word.hanViet}</div>}
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {activeTab === 'grammar' && (
+        <section className="lesson-section">
+          <div className="grammar-stack">
+            {grammarItems.map((item) => (
+              <article className="grammar-card" key={item.id}>
+                <h3>{item.pattern}</h3>
+                {item.explanationVi && <p>{item.explanationVi}</p>}
+                {(item.examples ?? []).map((example, index) => (
+                  <div className="sentence-card" key={`${item.id}-${index}`}>
+                    <div className="sentence-zh">{example.chinese}</div>
+                    {showPinyin && example.pinyin && <div className="sentence-pinyin">{example.pinyin}</div>}
+                    {showVietnamese && example.vietnamese && <div className="sentence-vi">{example.vietnamese}</div>}
+                  </div>
+                ))}
+              </article>
+            ))}
+            {grammarItems.length === 0 && <div className="empty-state">Chưa có mục grammar/usage vật lý.</div>}
+          </div>
+        </section>
+      )}
+
+      {activeTab === 'phonetics' && (
+        <section className="lesson-section">
+          <div className="grammar-stack">
+            {(lesson.phonetics ?? []).map((item) => (
+              <article className="grammar-card" key={item.id}>
+                <h3>{item.pattern}</h3>
+                {item.explanationVi && <p>{item.explanationVi}</p>}
+              </article>
+            ))}
+            {(lesson.phonetics?.length ?? 0) === 0 && <div className="empty-state">Bài này không có mục ngữ âm riêng hoặc dữ liệu chưa phát sinh.</div>}
+          </div>
+          <p className="muted">Không đặt audio riêng dưới các thẻ ngữ âm.</p>
+        </section>
+      )}
+
+      {activeTab === 'exercise' && (
+        <section className="lesson-section">
+          <div className="list-stack">
+            {(lesson.exerciseGroups ?? []).map((group) => (
+              <article className="list-card" key={group.id}>
+                <div className="grow"><strong>{group.title}</strong>{group.type && <span>{group.type}</span>}</div>
+              </article>
+            ))}
+          </div>
+          {(lesson.exerciseGroups?.length ?? 0) === 0 && <div className="empty-state">Chưa có exerciseGroups vật lý.</div>}
+        </section>
+      )}
+
+      <div className="lesson-complete-bar">
+        <button className="primary-button" onClick={async () => {
+          await markLessonCompleted(bookNumber, lessonNumber)
+          alert('Đã đánh dấu bài học hoàn thành.')
+        }}>✓ Đánh dấu hoàn thành bài</button>
+      </div>
+    </div>
+  )
+}

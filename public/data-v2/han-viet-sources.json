@@ -1,0 +1,15 @@
+{
+  "version": "2026-10-18",
+  "policy": "Only externally sourced Sino-Vietnamese character readings are eligible for automatic composition. No model-only Hán-Việt reading is marked verified.",
+  "sources": [
+    {
+      "id": "kaihanzi_hsk_sino_vietnamese_2026",
+      "name": "Kai Hanzi HSK × Sino-Vietnamese character dataset",
+      "upstream": "https://github.com/binhbuithithanh/hanzi-sino-vietnamese",
+      "lookup": "https://kaihanzi.com/chu",
+      "license": "CC BY 4.0",
+      "attribution": "Data from the Kai Hanzi HSK × Sino-Vietnamese dataset, CC BY 4.0.",
+      "scope": "Sino-Vietnamese character readings used by the verified subset in han-viet-char-verified.json"
+    }
+  ]
+}

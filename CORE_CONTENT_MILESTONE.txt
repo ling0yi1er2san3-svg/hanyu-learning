@@ -1,0 +1,35 @@
+HANYU LEARNING V2 - CORE CONTENT MILESTONE
+
+All 58 core lessons now contain source-verified Chinese lesson content.
+
+Catalog: 76 lessons
+Core structured: 58
+Partial source: 6
+Missing source: 12
+
+Vocabulary index: 1,942 / 1,942
+Search index: 1,942 / 1,942
+Core lesson content: 58 / 58
+Text sections: 26
+Dialogue sections: 74
+Dialogue lines: 712
+Chinese source characters: 29,374
+
+Pinyin per full lesson text/dialogue line: pending where not yet provided
+Vietnamese translation per full lesson text/dialogue line: pending where not yet provided
+Audio exact mapping: pending
+
+Validation commands:
+  npm run validate:catalog
+  npm run validate:data
+  npm run validate:content
+  npm run validate:q1
+  npm run validate:q2
+  npm run validate:q3
+  npm run validate:q4
+  npm run validate:q5
+  npm run validate:q6
+  npm run validate:q3-content
+  npm run validate:q4-content
+  npm run validate:q5-content
+  npm run validate:q6-content

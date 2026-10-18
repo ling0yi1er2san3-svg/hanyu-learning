@@ -1,0 +1,17 @@
+HANYU LEARNING V2 - VIETNAMESE TRANSLATION MILESTONE
+Date: 2026-10-18
+
+Core translation coverage: 738/738 content units.
+Book 1: 141/141 source/legacy Vietnamese units.
+Book 2: 137/137 assistant_translation.
+Book 3: 214/214 assistant_translation.
+Book 4: 221/221 assistant_translation.
+Book 5: 12/12 assistant_translation text sections.
+Book 6: 13/13 assistant_translation text sections.
+
+Q5/Q6 source Chinese remains sourceVerified=true.
+Q5/Q6 Vietnamese remains translationSourceVerified=false and generatedTranslation=true.
+
+Global translation validator: OK.
+Data/content/Pinyin/audio-inventory validators: OK.
+Build/audit not claimed: package-lock missing and registry operation timed out.

@@ -1,0 +1,473 @@
+{
+  "id": "b1_l03",
+  "book": 1,
+  "lesson": 3,
+  "titleZh": "明天见",
+  "titlePinyin": "Míngtiān jiàn",
+  "titleVi": "Ngày mai gặp lại",
+  "sourceStatus": "core_structured",
+  "contentStatus": "core_verified_q1",
+  "vocabularyExpectedCount": 15,
+  "vocabulary": [
+    {
+      "id": "b1_l03_v001",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "学",
+      "pinyin": "xué",
+      "pinyinPlain": "xue",
+      "hanViet": "Học",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "học",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l03_v002",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "英语",
+      "pinyin": "Yīngyǔ",
+      "pinyinPlain": "yingyu",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "tiếng Anh",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v003",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "对",
+      "pinyin": "duì",
+      "pinyinPlain": "dui",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "đúng, phải",
+      "meaningViStatus": "source",
+      "partOfSpeech": "adjective",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v004",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "明天",
+      "pinyin": "míngtiān",
+      "pinyinPlain": "mingtian",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "ngày mai",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v005",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "见",
+      "pinyin": "jiàn",
+      "pinyinPlain": "jian",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "gặp, thấy",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v006",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "去",
+      "pinyin": "qù",
+      "pinyinPlain": "qu",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "đi, đến",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v007",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "邮局",
+      "pinyin": "yóujú",
+      "pinyinPlain": "youju",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "bưu cục",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v008",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "寄",
+      "pinyin": "jì",
+      "pinyinPlain": "ji",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "gửi",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v009",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "信",
+      "pinyin": "xìn",
+      "pinyinPlain": "xin",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "thư",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v010",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "银行",
+      "pinyin": "yínháng",
+      "pinyinPlain": "yinhang",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "ngân hàng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v011",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "取",
+      "pinyin": "qǔ",
+      "pinyinPlain": "qu",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "rút, lấy",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v012",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "钱",
+      "pinyin": "qián",
+      "pinyinPlain": "qian",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "tiền",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l03_v013",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "六",
+      "pinyin": "liù",
+      "pinyinPlain": "liu",
+      "hanViet": "Lục",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "sáu",
+      "meaningViStatus": "source",
+      "partOfSpeech": "numeral",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l03_v014",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "七",
+      "pinyin": "qī",
+      "pinyinPlain": "qi",
+      "hanViet": "Thất",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "bảy",
+      "meaningViStatus": "source",
+      "partOfSpeech": "numeral",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    },
+    {
+      "id": "b1_l03_v015",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "pinyinPlain": "jiu",
+      "hanViet": "Cửu",
+      "hanVietStatus": "verified_external_character",
+      "meaningVi": "chín",
+      "meaningViStatus": "source",
+      "partOfSpeech": "numeral",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": [],
+      "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+    }
+  ],
+  "supplementalVocabulary": [],
+  "properNames": [
+    {
+      "id": "b1_l03_p001",
+      "book": 1,
+      "lesson": 3,
+      "lessonId": "b1_l03",
+      "hanzi": "北京",
+      "pinyin": "Běijīng",
+      "pinyinPlain": "beijing",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "Bắc Kinh",
+      "meaningViStatus": "source",
+      "partOfSpeech": "proper_name",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "texts": [],
+  "dialogues": [
+    {
+      "id": "b1_l03_d01",
+      "title": "学汉语",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你学英语吗？",
+          "pinyin": "Nǐ xué Yīngyǔ ma?",
+          "vietnamese": "Bạn học tiếng Anh không?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "B",
+          "chinese": "不，学汉语。",
+          "pinyin": "Bù, xué Hànyǔ.",
+          "vietnamese": "Không, học tiếng Hán.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "A",
+          "chinese": "去北京吗？",
+          "pinyin": "Qù Běijīng ma?",
+          "vietnamese": "Đi Bắc Kinh à?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "B",
+          "chinese": "对。",
+          "pinyin": "Duì.",
+          "vietnamese": "Đúng.",
+          "pinyinStatus": "existing_curated"
+        }
+      ],
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l03_d02",
+      "title": "明天见",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你去邮局寄信吗？",
+          "pinyin": "Nǐ qù yóujú jì xìn ma?",
+          "vietnamese": "Bạn đi bưu điện gửi thư à?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "B",
+          "chinese": "不去。去银行取钱。",
+          "pinyin": "Bù qù. Qù yínháng qǔ qián.",
+          "vietnamese": "Không đi. Đi ngân hàng rút tiền.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "A",
+          "chinese": "明天见！",
+          "pinyin": "Míngtiān jiàn!",
+          "vietnamese": "Ngày mai gặp lại!",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "B",
+          "chinese": "明天见！",
+          "pinyin": "Míngtiān jiàn!",
+          "vietnamese": "Ngày mai gặp lại!",
+          "pinyinStatus": "existing_curated"
+        }
+      ],
+      "sourceVerified": true
+    }
+  ],
+  "grammar": [],
+  "usage": [],
+  "phonetics": [
+    {
+      "id": "b1_l03_ph01",
+      "pattern": "Thanh mẫu j q x",
+      "explanationVi": "Luyện thanh mẫu j, q, x.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l03_ph02",
+      "pattern": "Vận mẫu ia ie iao iu(you) ian in iang ing iong ü üe üan ün",
+      "explanationVi": "Luyện các vận mẫu của i và ü.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l03_ph03",
+      "pattern": "Quy tắc viết Pinyin",
+      "explanationVi": "Giới thiệu quy tắc viết i, u, ü và các tổ hợp.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l03_ph04",
+      "pattern": "“不”的变调 – Biến điệu của 不",
+      "explanationVi": "不 cơ bản là thanh 4; trước một âm tiết thanh 4 thì thường đọc thành thanh 2.",
+      "sourceVerified": true
+    }
+  ],
+  "exerciseGroups": [
+    {
+      "id": "b1_l03_e01",
+      "title": "声调 – Thanh điệu",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l03_e02",
+      "title": "“不”的变调 – Biến điệu của 不",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l03_e03",
+      "title": "拼音辨调 – Phân biệt âm, thanh điệu",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l03_e04",
+      "title": "认读 – Nhận mặt chữ Hán và đọc",
+      "sourceVerified": true,
+      "type": "reading"
+    },
+    {
+      "id": "b1_l03_e05",
+      "title": "完成会话 – Hoàn thành hội thoại",
+      "sourceVerified": true,
+      "type": "dialogue"
+    },
+    {
+      "id": "b1_l03_e06",
+      "title": "写汉字 – Tập viết chữ Hán",
+      "sourceVerified": true,
+      "type": "writing"
+    }
+  ],
+  "audio": {
+    "tracks": [],
+    "mappingVerified": false
+  },
+  "verification": {
+    "vocabularyVerified": true,
+    "textsVerified": true,
+    "grammarVerified": true,
+    "exercisesVerified": true,
+    "audioVerified": false,
+    "pinyinCoverageComplete": true,
+    "pinyinSourceVerified": false,
+    "pinyinMethod": "mixed_existing_and_icu_han_latin",
+    "hanVietVerifiedSubsetApplied": true,
+    "hanVietSource": "kaihanzi_hsk_sino_vietnamese_2026"
+  },
+  "sourcePages": [
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    45
+  ]
+}

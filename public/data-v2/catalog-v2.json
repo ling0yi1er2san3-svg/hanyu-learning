@@ -1,0 +1,693 @@
+{
+  "version": 2,
+  "totalLessons": 76,
+  "coreLessons": 58,
+  "partialLessons": 6,
+  "missingLessons": 12,
+  "lessons": [
+    {
+      "id": "b1_l01",
+      "book": 1,
+      "lesson": 1,
+      "titleZh": "你好",
+      "titleVi": "Xin chào",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l02",
+      "book": 1,
+      "lesson": 2,
+      "titleZh": "汉语不太难",
+      "titleVi": "Tiếng Hán không khó lắm",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l03",
+      "book": 1,
+      "lesson": 3,
+      "titleZh": "明天见",
+      "titleVi": "Ngày mai gặp lại",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l04",
+      "book": 1,
+      "lesson": 4,
+      "titleZh": "你去哪儿",
+      "titleVi": "Bạn đi đâu đấy",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l05",
+      "book": 1,
+      "lesson": 5,
+      "titleZh": "这是王老师",
+      "titleVi": "Đây là thầy giáo Vương",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l06",
+      "book": 1,
+      "lesson": 6,
+      "titleZh": "我学习汉语",
+      "titleVi": "Tôi học tiếng Hán",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l07",
+      "book": 1,
+      "lesson": 7,
+      "titleZh": "你吃什么",
+      "titleVi": "Bạn ăn gì",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l08",
+      "book": 1,
+      "lesson": 8,
+      "titleZh": "苹果一斤多少钱",
+      "titleVi": "Một cân táo bao nhiêu tiền",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l09",
+      "book": 1,
+      "lesson": 9,
+      "titleZh": "我换人民币",
+      "titleVi": "Tôi đổi tiền nhân dân tệ",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l10",
+      "book": 1,
+      "lesson": 10,
+      "titleZh": "他住哪儿",
+      "titleVi": "Ông ấy sống ở đâu",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l11",
+      "book": 1,
+      "lesson": 11,
+      "titleZh": "我们都是留学生",
+      "titleVi": "Chúng tôi đều là lưu học sinh",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l12",
+      "book": 1,
+      "lesson": 12,
+      "titleZh": "你在哪儿学习汉语",
+      "titleVi": "Bạn học tiếng Hán ở đâu",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l13",
+      "book": 1,
+      "lesson": 13,
+      "titleZh": "这是不是中药",
+      "titleVi": "Đây có phải là thuốc Đông y không",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b1_l14",
+      "book": 1,
+      "lesson": 14,
+      "titleZh": "你的车是新的还是旧的",
+      "titleVi": "",
+      "sourceStatus": "partial_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b1_l15",
+      "book": 1,
+      "lesson": 15,
+      "titleZh": "你们公司有多少职员",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b2_l16",
+      "book": 2,
+      "lesson": 16,
+      "titleZh": "你常去图书馆吗",
+      "titleVi": "Bạn có thường xuyên đến thư viện không",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b2_l17",
+      "book": 2,
+      "lesson": 17,
+      "titleZh": "他在做什么呢",
+      "titleVi": "Bạn ấy đang làm gì đấy",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b2_l18",
+      "book": 2,
+      "lesson": 18,
+      "titleZh": "我去邮局寄包裹",
+      "titleVi": "Tôi đi bưu điện gửi bưu phẩm",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b2_l19",
+      "book": 2,
+      "lesson": 19,
+      "titleZh": "可以试试吗",
+      "titleVi": "Có thể thử được không",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b2_l20",
+      "book": 2,
+      "lesson": 20,
+      "titleZh": "祝你生日快乐",
+      "titleVi": "Chúc bạn sinh nhật vui vẻ",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b2_l21",
+      "book": 2,
+      "lesson": 21,
+      "titleZh": "我们明天七点一刻出发",
+      "titleVi": "Ngày mai chúng ta xuất phát lúc 7 giờ 15",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b2_l22",
+      "book": 2,
+      "lesson": 22,
+      "titleZh": "我打算请老师教我京剧",
+      "titleVi": "Tôi định mời giáo viên dạy tôi Kinh kịch",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b2_l23",
+      "book": 2,
+      "lesson": 23,
+      "titleZh": "学校里边有邮局吗",
+      "titleVi": "Trong trường có bưu điện không",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b2_l24",
+      "book": 2,
+      "lesson": 24,
+      "titleZh": "我想学太极拳",
+      "titleVi": "Tôi muốn học Thái Cực Quyền",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b2_l25",
+      "book": 2,
+      "lesson": 25,
+      "titleZh": "她学得很好",
+      "titleVi": "",
+      "sourceStatus": "partial_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b2_l26",
+      "book": 2,
+      "lesson": 26,
+      "titleZh": "田芳去哪儿了",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b2_l27",
+      "book": 2,
+      "lesson": 27,
+      "titleZh": "玛丽哭了",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b2_l28",
+      "book": 2,
+      "lesson": 28,
+      "titleZh": "我吃了早饭就来了",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b2_l29",
+      "book": 2,
+      "lesson": 29,
+      "titleZh": "我都做对了",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b2_l30",
+      "book": 2,
+      "lesson": 30,
+      "titleZh": "第30课（标题待核对）",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b3_l01",
+      "book": 3,
+      "lesson": 1,
+      "titleZh": "我比你更喜欢音乐",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b3_l02",
+      "book": 3,
+      "lesson": 2,
+      "titleZh": "我们那儿的冬天跟北京一样冷",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b3_l03",
+      "book": 3,
+      "lesson": 3,
+      "titleZh": "冬天快要到了",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b3_l04",
+      "book": 3,
+      "lesson": 4,
+      "titleZh": "快上来吧，要开车了",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b3_l05",
+      "book": 3,
+      "lesson": 5,
+      "titleZh": "我听过钢琴协奏曲《黄河》",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b3_l06",
+      "book": 3,
+      "lesson": 6,
+      "titleZh": "我是跟旅游团一起来的",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b3_l07",
+      "book": 3,
+      "lesson": 7,
+      "titleZh": "我的护照你找到了没有",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b3_l08",
+      "book": 3,
+      "lesson": 8,
+      "titleZh": "我的眼镜摔坏了",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b3_l09",
+      "book": 3,
+      "lesson": 9,
+      "titleZh": "钥匙忘拔下来了",
+      "titleVi": "",
+      "sourceStatus": "partial_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b3_l10",
+      "book": 3,
+      "lesson": 10,
+      "titleZh": "会议厅的门开着呢",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b4_l11",
+      "book": 4,
+      "lesson": 11,
+      "titleZh": "前边开过来一辆空车",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b4_l12",
+      "book": 4,
+      "lesson": 12,
+      "titleZh": "为什么把“福”字倒贴在门上",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b4_l13",
+      "book": 4,
+      "lesson": 13,
+      "titleZh": "请把护照和机票给我",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b4_l14",
+      "book": 4,
+      "lesson": 14,
+      "titleZh": "我的腿被自行车撞伤了",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b4_l15",
+      "book": 4,
+      "lesson": 15,
+      "titleZh": "京剧我看得懂，但是听不懂",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b4_l16",
+      "book": 4,
+      "lesson": 16,
+      "titleZh": "山这么高，你爬得上去吗",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b4_l17",
+      "book": 4,
+      "lesson": 17,
+      "titleZh": "我想起来了",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b4_l18",
+      "book": 4,
+      "lesson": 18,
+      "titleZh": "寒假你打算去哪儿旅行",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b4_l19",
+      "book": 4,
+      "lesson": 19,
+      "titleZh": "有困难找警察",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b4_l20",
+      "book": 4,
+      "lesson": 20,
+      "titleZh": "吉利的数字",
+      "titleVi": "",
+      "sourceStatus": "partial_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b5_l01",
+      "book": 5,
+      "lesson": 1,
+      "titleZh": "离家的时候",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b5_l02",
+      "book": 5,
+      "lesson": 2,
+      "titleZh": "一封信",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b5_l03",
+      "book": 5,
+      "lesson": 3,
+      "titleZh": "北京的四季",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b5_l04",
+      "book": 5,
+      "lesson": 4,
+      "titleZh": "理想",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b5_l05",
+      "book": 5,
+      "lesson": 5,
+      "titleZh": "回头再说",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b5_l06",
+      "book": 5,
+      "lesson": 6,
+      "titleZh": "吃葡萄",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b5_l07",
+      "book": 5,
+      "lesson": 7,
+      "titleZh": "成语故事",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b5_l08",
+      "book": 5,
+      "lesson": 8,
+      "titleZh": "恋爱故事",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b5_l09",
+      "book": 5,
+      "lesson": 9,
+      "titleZh": "幸福的感觉",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b5_l10",
+      "book": 5,
+      "lesson": 10,
+      "titleZh": "提高自己",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b5_l11",
+      "book": 5,
+      "lesson": 11,
+      "titleZh": "我看见了飞碟",
+      "titleVi": "",
+      "sourceStatus": "partial_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b5_l12",
+      "book": 5,
+      "lesson": 12,
+      "titleZh": "好人难当",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b5_l13",
+      "book": 5,
+      "lesson": 13,
+      "titleZh": "百姓话题",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b6_l14",
+      "book": 6,
+      "lesson": 14,
+      "titleZh": "谁当家",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b6_l15",
+      "book": 6,
+      "lesson": 15,
+      "titleZh": "受伤以后",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b6_l16",
+      "book": 6,
+      "lesson": 16,
+      "titleZh": "话说“慢点儿”",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b6_l17",
+      "book": 6,
+      "lesson": 17,
+      "titleZh": "再试一次",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b6_l18",
+      "book": 6,
+      "lesson": 18,
+      "titleZh": "一盒蛋糕",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b6_l19",
+      "book": 6,
+      "lesson": 19,
+      "titleZh": "无声的泪",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b6_l20",
+      "book": 6,
+      "lesson": 20,
+      "titleZh": "什么最重要",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b6_l21",
+      "book": 6,
+      "lesson": 21,
+      "titleZh": "理发",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b6_l22",
+      "book": 6,
+      "lesson": 22,
+      "titleZh": "母亲的心",
+      "titleVi": "",
+      "sourceStatus": "core_structured",
+      "studyAvailable": true
+    },
+    {
+      "id": "b6_l23",
+      "book": 6,
+      "lesson": 23,
+      "titleZh": "网络学校",
+      "titleVi": "",
+      "sourceStatus": "partial_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b6_l24",
+      "book": 6,
+      "lesson": 24,
+      "titleZh": "情商",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b6_l25",
+      "book": 6,
+      "lesson": 25,
+      "titleZh": "你喜欢什么颜色",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    },
+    {
+      "id": "b6_l26",
+      "book": 6,
+      "lesson": 26,
+      "titleZh": "梁山伯与祝英台",
+      "titleVi": "",
+      "sourceStatus": "missing_source",
+      "studyAvailable": false
+    }
+  ]
+}

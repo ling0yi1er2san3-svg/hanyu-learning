@@ -1,0 +1,597 @@
+{
+  "id": "b1_l12",
+  "book": 1,
+  "lesson": 12,
+  "titleZh": "你在哪儿学习汉语",
+  "titlePinyin": "Nǐ zài nǎr xuéxí Hànyǔ",
+  "titleVi": "Bạn học tiếng Hán ở đâu",
+  "sourceStatus": "core_structured",
+  "contentStatus": "core_verified_q1",
+  "vocabularyExpectedCount": 18,
+  "vocabulary": [
+    {
+      "id": "b1_l12_v001",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "语言",
+      "pinyin": "yǔyán",
+      "pinyinPlain": "yuyan",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "ngôn ngữ",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v002",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "大学",
+      "pinyin": "dàxué",
+      "pinyinPlain": "daxue",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "đại học",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v003",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "pinyinPlain": "zenmeyang",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "như thế nào",
+      "meaningViStatus": "source",
+      "partOfSpeech": "pronoun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v004",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "觉得",
+      "pinyin": "juéde",
+      "pinyinPlain": "juede",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "cảm thấy, cho rằng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v005",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "语法",
+      "pinyin": "yǔfǎ",
+      "pinyinPlain": "yufa",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "ngữ pháp",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v006",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "听",
+      "pinyin": "tīng",
+      "pinyinPlain": "ting",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "nghe",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v007",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "和",
+      "pinyin": "hé",
+      "pinyinPlain": "he",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "và",
+      "meaningViStatus": "source",
+      "partOfSpeech": "conjunction",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v008",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "pinyinPlain": "shuo",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "nói, kể",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v009",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "比较",
+      "pinyin": "bǐjiào",
+      "pinyinPlain": "bijiao",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "tương đối, so sánh",
+      "meaningViStatus": "source",
+      "partOfSpeech": "adverb/verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v010",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "容易",
+      "pinyin": "róngyì",
+      "pinyinPlain": "rongyi",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "dễ, dễ dàng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "adjective",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v011",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "读",
+      "pinyin": "dú",
+      "pinyinPlain": "du",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "đọc",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v012",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "写",
+      "pinyin": "xiě",
+      "pinyinPlain": "xie",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "viết",
+      "meaningViStatus": "source",
+      "partOfSpeech": "verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v013",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "但是",
+      "pinyin": "dànshì",
+      "pinyinPlain": "danshi",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "nhưng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "conjunction",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v014",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "给",
+      "pinyin": "gěi",
+      "pinyinPlain": "gei",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "tới, cho",
+      "meaningViStatus": "source",
+      "partOfSpeech": "preposition/verb",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v015",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "pinyinPlain": "xin",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "mới",
+      "meaningViStatus": "source",
+      "partOfSpeech": "adjective",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v016",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "同学",
+      "pinyin": "tóngxué",
+      "pinyinPlain": "tongxue",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "bạn học, bạn cùng lớp",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v017",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "同屋",
+      "pinyin": "tóngwū",
+      "pinyinPlain": "tongwu",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "bạn cùng phòng",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_v018",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "班",
+      "pinyin": "bān",
+      "pinyinPlain": "ban",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "lớp",
+      "meaningViStatus": "source",
+      "partOfSpeech": "noun",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "supplementalVocabulary": [],
+  "properNames": [
+    {
+      "id": "b1_l12_p001",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "北京语言大学",
+      "pinyin": "Běijīng Yǔyán Dàxué",
+      "pinyinPlain": "beijingyuyandaxue",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "Đại học Ngôn ngữ Bắc Kinh",
+      "meaningViStatus": "source",
+      "partOfSpeech": "proper_name",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    },
+    {
+      "id": "b1_l12_p002",
+      "book": 1,
+      "lesson": 12,
+      "lessonId": "b1_l12",
+      "hanzi": "林",
+      "pinyin": "Lín",
+      "pinyinPlain": "lin",
+      "hanViet": null,
+      "hanVietStatus": "pending",
+      "meaningVi": "họ Lâm",
+      "meaningViStatus": "source",
+      "partOfSpeech": "proper_name",
+      "sourceVerified": true,
+      "audio": null,
+      "audioStatus": "pending_mapping",
+      "searchKeys": []
+    }
+  ],
+  "texts": [],
+  "dialogues": [
+    {
+      "id": "b1_l12_d01",
+      "title": "你在哪儿学习汉语",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "你在哪儿学习汉语？",
+          "pinyin": "Nǐ zài nǎr xuéxí Hànyǔ?",
+          "vietnamese": "Bạn học tiếng Hán ở đâu?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "B",
+          "chinese": "在北京语言大学。",
+          "pinyin": "Zài Běijīng Yǔyán Dàxué.",
+          "vietnamese": "Ở Đại học Ngôn ngữ Bắc Kinh.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "A",
+          "chinese": "你们的老师怎么样？",
+          "pinyin": "Nǐmen de lǎoshī zěnmeyàng?",
+          "vietnamese": "Giáo viên của các bạn thế nào?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "B",
+          "chinese": "很好！",
+          "pinyin": "Hěn hǎo!",
+          "vietnamese": "Rất tốt!",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "A",
+          "chinese": "你觉得学习汉语难吗？",
+          "pinyin": "Nǐ juéde xuéxí Hànyǔ nán ma?",
+          "vietnamese": "Bạn thấy học tiếng Hán có khó không?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "B",
+          "chinese": "我觉得语法不太难。听和说也比较容易，但是读和写很难。",
+          "pinyin": "Wǒ juéde yǔfǎ bú tài nán. Tīng hé shuō yě bǐjiào róngyì, dànshì dú hé xiě hěn nán.",
+          "vietnamese": "Tôi thấy ngữ pháp không khó lắm. Nghe và nói cũng tương đối dễ, nhưng đọc và viết rất khó.",
+          "pinyinStatus": "existing_curated"
+        }
+      ],
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l12_d02",
+      "title": "你们的老师是谁",
+      "lines": [
+        {
+          "speaker": "A",
+          "chinese": "我给你们介绍一下儿，这位是新同学，是我的同屋。",
+          "pinyin": "Wǒ gěi nǐmen jièshào yíxiàr, zhè wèi shì xīn tóngxué, shì wǒ de tóngwū.",
+          "vietnamese": "Tôi giới thiệu với các bạn một chút, đây là bạn học mới, là bạn cùng phòng của tôi.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "B",
+          "chinese": "你在哪个班学习？",
+          "pinyin": "Nǐ zài nǎ ge bān xuéxí?",
+          "vietnamese": "Bạn học ở lớp nào?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "C",
+          "chinese": "在103班。",
+          "pinyin": "Zài yī líng sān bān.",
+          "vietnamese": "Ở lớp 103.",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "B",
+          "chinese": "你们的老师是谁？",
+          "pinyin": "Nǐmen de lǎoshī shì shéi?",
+          "vietnamese": "Giáo viên của các bạn là ai?",
+          "pinyinStatus": "existing_curated"
+        },
+        {
+          "speaker": "C",
+          "chinese": "我们的老师是林老师。",
+          "pinyin": "Wǒmen de lǎoshī shì Lín lǎoshī.",
+          "vietnamese": "Giáo viên của chúng tôi là thầy/cô Lâm.",
+          "pinyinStatus": "existing_curated"
+        }
+      ],
+      "sourceVerified": true
+    }
+  ],
+  "grammar": [
+    {
+      "id": "b1_l12_g01",
+      "pattern": "疑问代词 – Đại từ nghi vấn",
+      "explanationVi": "Các đại từ như 谁、什么、哪、哪儿、怎么、怎么样、几、多少 dùng để hỏi và đứng ở vị trí của thành phần cần hỏi.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l12_g02",
+      "pattern": "定语和结构助词“的”",
+      "explanationVi": "Định ngữ đứng trước trung tâm ngữ; 的 thường nối định ngữ với trung tâm ngữ trong nhiều trường hợp.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l12_g03",
+      "pattern": "介词“在”和“给”",
+      "explanationVi": "在 + địa điểm có thể đứng trước động từ làm trạng ngữ; 给 có thể giới thiệu đối tượng hưởng lợi hoặc người nhận.",
+      "sourceVerified": true
+    }
+  ],
+  "usage": [],
+  "phonetics": [
+    {
+      "id": "b1_l12_ph01",
+      "pattern": "句重音（2）– Trọng âm câu",
+      "explanationVi": "Định ngữ thường không nhấn bằng trung tâm ngữ; cụm giới từ làm định ngữ hoặc trạng ngữ có quy luật nhấn riêng.",
+      "sourceVerified": true
+    },
+    {
+      "id": "b1_l12_ph02",
+      "pattern": "语调（2）– Ngữ điệu câu hỏi",
+      "explanationVi": "Câu hỏi dùng đại từ nghi vấn thường không cần ngữ điệu lên như câu hỏi 吗; trọng âm rơi vào từ nghi vấn.",
+      "sourceVerified": true
+    }
+  ],
+  "exerciseGroups": [
+    {
+      "id": "b1_l12_e01",
+      "title": "拼音辨调 – Phân biệt âm, thanh điệu",
+      "sourceVerified": true,
+      "type": "phonetics"
+    },
+    {
+      "id": "b1_l12_e02",
+      "title": "朗读 – Đọc các cụm từ",
+      "sourceVerified": true,
+      "type": "reading"
+    },
+    {
+      "id": "b1_l12_e03",
+      "title": "替换 – Bài tập thay thế",
+      "sourceVerified": true,
+      "type": "substitution"
+    },
+    {
+      "id": "b1_l12_e04",
+      "title": "选词填空 – Chọn từ điền vào chỗ trống",
+      "sourceVerified": true,
+      "type": "fill"
+    },
+    {
+      "id": "b1_l12_e05",
+      "title": "在适当位置加上“的” – Thêm 的 vào vị trí thích hợp",
+      "sourceVerified": true,
+      "type": "grammar"
+    },
+    {
+      "id": "b1_l12_e06",
+      "title": "根据划线部分用疑问代词提问 – Dùng đại từ nghi vấn đặt câu hỏi",
+      "sourceVerified": true,
+      "type": "grammar"
+    },
+    {
+      "id": "b1_l12_e07",
+      "title": "组句 – Sắp xếp từ thành câu",
+      "sourceVerified": true,
+      "type": "sentence"
+    },
+    {
+      "id": "b1_l12_e08",
+      "title": "完成会话 – Hoàn thành hội thoại",
+      "sourceVerified": true,
+      "type": "dialogue"
+    },
+    {
+      "id": "b1_l12_e09",
+      "title": "成段表达 – Diễn đạt thành đoạn",
+      "sourceVerified": true,
+      "type": "speaking"
+    },
+    {
+      "id": "b1_l12_e10",
+      "title": "写汉字 – Tập viết chữ Hán",
+      "sourceVerified": true,
+      "type": "writing"
+    }
+  ],
+  "audio": {
+    "tracks": [],
+    "mappingVerified": false
+  },
+  "verification": {
+    "vocabularyVerified": true,
+    "textsVerified": true,
+    "grammarVerified": true,
+    "exercisesVerified": true,
+    "audioVerified": false,
+    "pinyinCoverageComplete": true,
+    "pinyinSourceVerified": false,
+    "pinyinMethod": "mixed_existing_and_icu_han_latin",
+    "hanVietVerifiedSubsetApplied": false,
+    "hanVietSource": null
+  },
+  "sourcePages": [
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127
+  ]
+}

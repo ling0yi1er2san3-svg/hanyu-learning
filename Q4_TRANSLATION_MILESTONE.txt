@@ -1,0 +1,9 @@
+HANYU LEARNING V2 - Q4 VIETNAMESE TRANSLATION MILESTONE
+
+Book 4 lessons 11-19
+Content units translated: 221/221
+Status: assistant_translation
+translationSourceVerified: false
+Validator: npm run validate:q4-translation
+
+Global data/content/pinyin validators also pass.

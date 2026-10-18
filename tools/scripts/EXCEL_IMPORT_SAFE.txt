@@ -1,0 +1,29 @@
+EXCEL IMPORT – PHƯƠNG ÁN AN TOÀN
+
+Website không còn dùng package "xlsx" / SheetJS.
+Lý do: npm audit báo lỗ hổng High và "No fix available".
+
+CÁCH 1 – KHÔNG CẦN PYTHON
+Trong Microsoft Excel:
+File
+→ Save As
+→ CSV UTF-8 (Comma delimited) (*.csv)
+
+Sau đó vào:
+Data Tools
+→ CSV / TSV
+→ chọn file CSV
+
+CÁCH 2 – DÙNG PYTHON
+Cài:
+pip install openpyxl
+
+Chạy:
+python tools/scripts/excel_to_csv.py "duong-dan-input.xlsx" "output.csv"
+
+Sau đó import output.csv vào Data Tools.
+
+Lưu ý:
+- openpyxl chỉ chạy offline trên máy chuẩn bị dữ liệu.
+- Không được bundle vào web production.
+- Người học bình thường không cần dùng công cụ này.

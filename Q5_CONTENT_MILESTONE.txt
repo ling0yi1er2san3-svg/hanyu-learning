@@ -1,0 +1,21 @@
+HANYU LEARNING V2 - Q5 CONTENT MILESTONE
+
+Book 5 core lessons 01-10 now include source-verified Chinese lesson texts.
+
+Lessons: 10/10
+Text sections: 12
+Chinese text characters: 7529
+Vocabulary: 390/390
+Pinyin per paragraph: pending
+Vietnamese translation per paragraph: pending
+Audio mapping: pending
+
+Validation commands:
+  npm run validate:q5
+  npm run validate:q5-content
+  npm run validate:data
+
+Current validation status:
+  Q5 STATUS: OK
+  Q5 CONTENT STATUS: OK
+  DATA STATUS: OK

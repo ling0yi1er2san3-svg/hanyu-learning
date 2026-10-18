@@ -1,0 +1,6 @@
+Q4 CONTENT MILESTONE
+
+Book 4 lessons 11-19 now contain source-transcribed Chinese lesson/dialogue content.
+Vocabulary remains 320/320.
+Pinyin/line-level Vietnamese/audio mapping remain pending.
+Run: npm run validate:q4-content

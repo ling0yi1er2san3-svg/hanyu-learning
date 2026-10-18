@@ -1,0 +1,27 @@
+HANYU LEARNING V2 - PINYIN + AUDIO INVENTORY MILESTONE
+Date: 2026-10-17
+
+PINYIN
+- Core content units: 738/738 have Pinyin.
+- Existing/curated Pinyin units: 148.
+- Newly generated with ICU Han-Latin: 590.
+- Generated Pinyin is coverage-complete but NOT source-verified; lesson verification explicitly records pinyinSourceVerified=false.
+- No source Chinese content was changed.
+
+AUDIO INVENTORY
+- Book 5 archive: 15 MP3 tracks inventoried; tracks 01-13 have sequential candidate mapping to lessons 1-13.
+- Book 6 archive: 15 MP3 tracks inventoried; tracks 01-13 have sequential candidate mapping to lessons 14-26.
+- Mapping is candidate-only. mappingVerified remains false everywhere.
+- No candidate track is exposed as verified playable lesson audio.
+
+VALIDATION
+- validate:pinyin: OK (738/738 units)
+- validate:audio-inventory: OK
+- validate:data: OK (1,942 vocabulary entries)
+- validate:content: OK (58/58 core lessons)
+
+Still pending:
+- human/source verification of generated Pinyin readings
+- Vietnamese translation for Q2-Q6 content units
+- extraction/listening/content verification of original Q5/Q6 MP3 files
+- exact audio timestamps/segment mapping

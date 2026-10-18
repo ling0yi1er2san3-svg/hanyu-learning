@@ -1,0 +1,3 @@
+import type { Vocabulary } from '../../types/lesson'
+import AudioButton from '../AudioPlayer/AudioButton'
+export default function VocabularyCard({item,onOpen}:{item:Vocabulary;onOpen:(item:Vocabulary)=>void}){return <article className="vocab-card" onClick={()=>onOpen(item)}><div className="vocab-topline"><span className="hanzi-large">{item.hanzi}</span><AudioButton text={item.hanzi} label=""/></div><div className="pinyin-line">{item.pinyin}</div><div className="meaning-line">{item.meaningVi}</div>{item.hanViet&&<div className="hanviet-line">Hán Việt: {item.hanViet}</div>}<small className="tap-hint">Bấm để xem chi tiết</small></article>}

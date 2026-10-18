@@ -1,0 +1,16 @@
+HANYU LEARNING V2 - Q6 CONTENT MILESTONE
+
+Book 6 core lessons 14-22 now include source-verified Chinese lesson texts.
+
+Lessons: 9/9
+Text sections: 13
+Chinese text characters: 9570
+Vocabulary: 535/535
+Pinyin per paragraph: pending
+Vietnamese translation per paragraph: pending
+Audio mapping: pending
+
+Validation commands:
+  npm run validate:q6
+  npm run validate:q6-content
+  npm run validate:data

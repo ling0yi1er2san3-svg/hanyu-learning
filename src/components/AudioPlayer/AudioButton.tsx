@@ -1,27 +1,5 @@
-import { playChineseAudio } from '../../services/audioService'
+import { openTtsPlayer } from '../../services/floatingMediaPlayer'
 
-type AudioButtonProps = {
-  text: string
-  label?: string
-  src?: string | null
-  title?: string
-}
-
-export default function AudioButton({ text, label = 'Nghe', src, title }: AudioButtonProps) {
-  const tooltip = title ?? (src ? 'Phát audio gốc' : 'Đọc bằng TTS tiếng Trung')
-
-  return (
-    <button
-      type="button"
-      className="audio-button"
-      title={tooltip}
-      aria-label={label || tooltip}
-      onClick={(event) => {
-        event.stopPropagation()
-        playChineseAudio(text, src)
-      }}
-    >
-      🔊{label ? ` ${label}` : ''}
-    </button>
-  )
+export default function AudioButton({text,label='Nghe'}:{text:string;label?:string}){
+  return <button type="button" className="audio-button" onClick={e=>{e.stopPropagation();openTtsPlayer({ text, title: label, subtitle: 'TTS tiếng Trung' })}}>🔊 {label}</button>
 }

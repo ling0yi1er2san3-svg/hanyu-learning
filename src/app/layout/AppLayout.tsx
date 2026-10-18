@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom'
+import FloatingMediaPlayer from '../../components/AudioPlayer/FloatingMediaPlayer'
 
 const navItems = [
   { to: '/', label: 'Học', icon: '学', end: true },
@@ -40,6 +41,8 @@ export default function AppLayout() {
       </aside>
 
       <main className="main-content"><Outlet /></main>
+
+      <FloatingMediaPlayer />
 
       <nav className="bottom-nav">
         {navItems

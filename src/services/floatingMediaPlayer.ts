@@ -16,15 +16,45 @@ const listeners = new Set<Listener>()
 
 export function subscribeFloatingPlayer(listener: Listener) {
   listeners.add(listener)
-  return () => listeners.delete(listener)
+  return () => {
+    listeners.delete(listener)
+  }
 }
 
 export function openFloatingPlayer(payload: FloatingPlayerPayload) {
   listeners.forEach((listener) => listener(payload))
 }
 
+function splitChineseText(text: string, maxLength = 90) {
+  const normalized = text.replace(/\s+/g, ' ').trim()
+  if (!normalized) return []
+
+  const sentenceParts = normalized.match(/[^。！？!?；;]+[。！？!?；;]?/g) ?? [normalized]
+  const chunks: string[] = []
+
+  for (const sentence of sentenceParts) {
+    const clean = sentence.trim()
+    if (!clean) continue
+    if (clean.length <= maxLength) {
+      chunks.push(clean)
+      continue
+    }
+    for (let start = 0; start < clean.length; start += maxLength) {
+      chunks.push(clean.slice(start, start + maxLength))
+    }
+  }
+  return chunks
+}
+
+export function resolveAudioUrl(src: string) {
+  if (/^https?:\/\//i.test(src) || src.startsWith('blob:') || src.startsWith('data:')) return src
+  const clean = src.replace(/^\.\//, '').replace(/^\//, '').replace(/^public\//, '')
+  const base = import.meta.env.BASE_URL || '/'
+  return `${base}${clean}`.replace(/([^:]\/)\/+?/g, '$1')
+}
+
 export function openTtsPlayer(options: { text?: string; texts?: string[]; title?: string; subtitle?: string; rate?: number }) {
-  const texts = options.texts?.filter(Boolean) ?? (options.text ? [options.text] : [])
+  const texts = options.texts?.filter(Boolean) ?? (options.text ? splitChineseText(options.text) : [])
   if (texts.length === 0) return
   openFloatingPlayer({
     mode: 'tts',
@@ -41,7 +71,7 @@ export function openAudioPlayer(options: { audioSrc: string; title?: string; sub
     mode: 'audio',
     title: options.title || 'Audio gốc',
     subtitle: options.subtitle,
-    audioSrc: options.audioSrc,
+    audioSrc: resolveAudioUrl(options.audioSrc),
   })
 }
 
